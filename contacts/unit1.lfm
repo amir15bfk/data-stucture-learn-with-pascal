@@ -1,98 +1,115 @@
 object Form1: TForm1
-  Left = 1134
-  Height = 265
-  Top = 258
-  Width = 286
-  Caption = 'Form1'
-  ClientHeight = 265
-  ClientWidth = 286
+  Left = 1029
+  Height = 237
+  Top = 155
+  Width = 293
+  HorzScrollBar.Page = 251
+  HorzScrollBar.Range = 251
+  VertScrollBar.Page = 241
+  VertScrollBar.Range = 241
+  Anchors = [akTop, akLeft, akRight, akBottom]
+  Caption = 'contacts'
+  ClientHeight = 237
+  ClientWidth = 293
+  Font.Color = clBlack
   LCLVersion = '2.0.4.0'
   object Label1: TLabel
-    Left = 64
+    Left = 48
     Height = 15
     Top = 8
-    Width = 25
-    Caption = 'nom'
+    Width = 66
+    Caption = 'family name'
     ParentColor = False
   end
   object Edit1: TEdit
-    Left = 23
+    Left = 16
     Height = 23
+    Hint = 'eg :Benbachir'
     Top = 32
-    Width = 121
+    Width = 128
+    ParentShowHint = False
+    ShowHint = True
     TabOrder = 0
+    TextHint = 'eg : Benbachir'
   end
   object Label2: TLabel
-    Left = 55
+    Left = 64
     Height = 15
     Top = 64
-    Width = 42
-    Caption = 'prenom'
+    Width = 30
+    Caption = 'name'
     ParentColor = False
   end
   object Edit2: TEdit
-    Left = 23
+    Left = 16
     Height = 23
     Top = 88
-    Width = 121
+    Width = 128
+    ParentShowHint = False
+    ShowHint = True
     TabOrder = 1
+    TextHint = 'eg : Mohamed Amir'
   end
   object Label3: TLabel
-    Left = 48
+    Left = 40
     Height = 15
     Top = 120
-    Width = 53
-    Caption = 'telephone'
+    Width = 79
+    Caption = 'phone number'
     ParentColor = False
   end
   object Edit3: TEdit
-    Left = 23
+    Left = 16
     Height = 23
-    Top = 144
-    Width = 121
+    Top = 145
+    Width = 128
+    ParentShowHint = False
+    ShowHint = True
     TabOrder = 2
+    TextHint = 'eg : 06667799'
   end
   object Button1: TButton
     Left = 16
-    Height = 47
+    Height = 44
     Top = 184
-    Width = 31
+    Width = 63
     Caption = 'add'
     OnClick = Button1Click
     TabOrder = 3
   end
   object Button2: TButton
-    Left = 64
-    Height = 45
+    Left = 80
+    Height = 44
     Top = 184
-    Width = 33
+    Width = 64
     Caption = 'find'
     OnClick = Button2Click
     TabOrder = 4
   end
   object Button3: TButton
-    Left = 112
-    Height = 45
+    Left = 152
+    Height = 44
     Top = 184
-    Width = 32
+    Width = 64
     Caption = 'sup'
     OnClick = Button3Click
     TabOrder = 5
   end
   object Label4: TLabel
-    Left = 147
-    Height = 15
-    Top = 16
-    Width = 6
-    Caption = '1'
+    Left = 192
+    Height = 1
+    Top = 8
+    Width = 1
+    Font.Color = clBlue
     ParentColor = False
+    ParentFont = False
   end
   object Button4: TButton
-    Left = 148
+    Left = 152
     Height = 22
     Top = 32
-    Width = 99
-    Caption = 'find by nom'
+    Width = 128
+    Caption = 'find by family name'
     OnClick = Button4Click
     TabOrder = 6
   end
@@ -100,8 +117,8 @@ object Form1: TForm1
     Left = 152
     Height = 22
     Top = 88
-    Width = 99
-    Caption = 'find by prenom'
+    Width = 128
+    Caption = 'find by name'
     OnClick = Button5Click
     TabOrder = 7
   end
@@ -109,16 +126,16 @@ object Form1: TForm1
     Left = 152
     Height = 22
     Top = 145
-    Width = 99
-    Caption = 'find by telephone'
+    Width = 128
+    Caption = 'find by phone number'
     OnClick = Button6Click
     TabOrder = 8
   end
   object Button7: TButton
-    Left = 152
-    Height = 45
+    Left = 216
+    Height = 44
     Top = 184
-    Width = 32
+    Width = 64
     Caption = 'clear'
     OnClick = Button7Click
     TabOrder = 9

@@ -64,7 +64,7 @@ begin
   contacts[i].prenom:=Edit2.Text;
   contacts[i].telephone:=Edit3.Text;
   i:=i+1;
-  label4.Caption:=''+i.ToString;
+
   Edit1.Text:='';
   Edit2.Text:='';
   Edit3.Text:='';
@@ -80,7 +80,7 @@ begin
   ((contacts[j].nom=Edit1.Text) and (contacts[j].prenom=Edit2.Text) and (contacts[j].telephone=Edit3.Text) )
    then
   begin
-  ShowMessage (' EXIST ');
+  label4.Caption:=' EXIST ';
   Edit1.Text:=contacts[j].nom;
   Edit2.Text:=contacts[j].prenom;
   Edit3.Text:=contacts[j].telephone;
@@ -125,7 +125,7 @@ begin
   (contacts[j].nom=Edit1.Text)
     then
   begin
-  ShowMessage (' EXIST ');
+  label4.Caption:=' EXIST ';
   Edit1.Text:=contacts[j].nom;
   Edit2.Text:=contacts[j].prenom;
   Edit3.Text:=contacts[j].telephone;
@@ -144,7 +144,7 @@ begin
   (contacts[j].prenom=Edit2.Text)
    then
   begin
-  ShowMessage (' EXIST ');
+  label4.Caption:=' EXIST ';
   Edit1.Text:=contacts[j].nom;
   Edit2.Text:=contacts[j].prenom;
   Edit3.Text:=contacts[j].telephone;
@@ -163,12 +163,12 @@ begin
   (contacts[j].telephone=Edit3.Text)
     then
   begin
-  ShowMessage (' EXIST ');
+  label4.Caption:=' EXIST ';
   Edit1.Text:=contacts[j].nom;
   Edit2.Text:=contacts[j].prenom;
   Edit3.Text:=contacts[j].telephone;
   break;
-  end;
+  end else begin label4.Caption:='NOT EXIST ';end;
   j:=j+1;
   end;
 end;
@@ -186,6 +186,8 @@ end;
 
 
 begin
+   ShowMessage (' this project by Mohamed Amir Benbachir A3');
+
   i:=1;
 
 
