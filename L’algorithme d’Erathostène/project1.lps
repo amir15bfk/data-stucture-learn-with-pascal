@@ -9,8 +9,7 @@
         <Filename Value="project1.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="16"/>
-        <CursorPos X="24" Y="52"/>
+        <CursorPos X="36" Y="20"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -18,7 +17,7 @@
         <Filename Value="llculib.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="10"/>
+        <TopLine Value="22"/>
         <CursorPos X="19" Y="17"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
@@ -26,7 +25,7 @@
       <Unit2>
         <Filename Value="llculibplus.pas"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="40"/>
+        <TopLine Value="62"/>
         <CursorPos X="10" Y="17"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
