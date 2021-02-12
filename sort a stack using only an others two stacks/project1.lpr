@@ -40,23 +40,27 @@ while  not( pilevide(p) and pilevide(p2)) do
          end;
 p:=p3;
 end;
-var p:pile;
-  n,x ,i:integer;
-begin
-
-   initpile(p);
-
+procedure remplirPile(var p:pile);
+var    n,x ,i:integer;
+  begin
    repeat
    writeln('donner n<100');
    readln(n);
    until (n<100) and (n>0);
    for i:=1 to n do
    begin
-
        writeln('give me x');
        readln(x);
-       empiler(p1,x);
+       empiler(p,x);
    end;
+  end;
+
+var p:pile;
+  n,x ,i:integer;
+begin
+
+   initpile(p);
+
    writeln('non sorted');
    Afficherpile(p);
 

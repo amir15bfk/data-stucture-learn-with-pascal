@@ -18,6 +18,7 @@ procedure InitPile(var p:pile);
 function pileVide(var p:pile):boolean;
 procedure Afficherpile( var p:pile);
 
+
 implementation
 
 procedure empiler(var p:pile; x:TypeDeBasedesElementsDeLaPile);
@@ -51,9 +52,9 @@ end;
 procedure Afficherpile( var p:pile);
 var i:integer;
 begin
-     for i:=1 to  p.sommet do
+     for i:=p.sommet downto  1 do
      writeln('| ',p.t[i] ,' |');
-     writeln('----');
+     writeln('-----');
 end;
 
 end.
