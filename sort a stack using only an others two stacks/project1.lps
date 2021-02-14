@@ -2,17 +2,14 @@
 <CONFIG>
   <ProjectSession>
     <PathDelim Value="\"/>
-    <Version Value="11"/>
+    <Version Value="10"/>
     <BuildModes Active="Default"/>
-    <Units Count="7">
+    <Units Count="9">
       <Unit0>
         <Filename Value="project1.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="31"/>
-        <CursorPos Y="63"/>
-        <UsageCount Value="21"/>
+        <UsageCount Value="27"/>
+        <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="unit1.pas"/>
@@ -20,7 +17,7 @@
         <UnitName Value="Unit1"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="19" Y="13"/>
-        <UsageCount Value="21"/>
+        <UsageCount Value="27"/>
       </Unit1>
       <Unit2>
         <Filename Value="llculib.pas"/>
@@ -50,18 +47,33 @@
       <Unit6>
         <Filename Value="piles.pas"/>
         <UnitName Value="Piles"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos Y="20"/>
-        <UsageCount Value="10"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="10"/>
+        <CursorPos X="107" Y="57"/>
+        <UsageCount Value="13"/>
+        <Loaded Value="True"/>
       </Unit6>
+      <Unit7>
+        <Filename Value="..\L’algorithme d’Erathostène\llculib.pas"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="23" Y="7"/>
+        <UsageCount Value="13"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\L’algorithme d’Erathostène\llculibplus.pas"/>
+        <EditorIndex Value="3"/>
+        <CursorPos X="27" Y="15"/>
+        <UsageCount Value="13"/>
+        <Loaded Value="True"/>
+      </Unit8>
     </Units>
-    <General>
-      <ActiveWindowIndexAtStart Value="-1"/>
-    </General>
-    <JumpHistory HistoryIndex="-1"/>
-    <RunParams>
-      <FormatVersion Value="2"/>
-      <Modes Count="0" ActiveMode=""/>
-    </RunParams>
+    <JumpHistory Count="1">
+      <Position1>
+        <Filename Value="piles.pas"/>
+        <Caret Line="57" Column="107" TopLine="38"/>
+      </Position1>
+    </JumpHistory>
   </ProjectSession>
 </CONFIG>

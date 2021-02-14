@@ -35,7 +35,7 @@ begin
 end;
 
 begin
-  hanoi(3,'A','C','B');
+  hanoi(3,'A','B','c');
   readln;
   readln;
 end.

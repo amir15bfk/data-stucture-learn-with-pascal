@@ -6,7 +6,7 @@ uses
   {$IFDEF UNIX}{$IFDEF UseCThreads}
   cthreads,
   {$ENDIF}{$ENDIF}
-  Classes, Unit1,piles
+  Classes,piles
   { you can add units after this };
 procedure getMin(var p1:pile;var p2 :pile;var min:Integer);
 var x: integer;
@@ -60,7 +60,7 @@ var p:pile;
 begin
 
    initpile(p);
-
+   remplirPile(p);
    writeln('non sorted');
    Afficherpile(p);
 

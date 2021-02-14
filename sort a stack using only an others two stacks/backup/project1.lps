@@ -2,39 +2,36 @@
 <CONFIG>
   <ProjectSession>
     <PathDelim Value="\"/>
-    <Version Value="11"/>
+    <Version Value="10"/>
     <BuildModes Active="Default"/>
-    <Units Count="7">
+    <Units Count="9">
       <Unit0>
         <Filename Value="project1.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="40"/>
-        <CursorPos X="9" Y="54"/>
-        <UsageCount Value="21"/>
+        <TopLine Value="51"/>
+        <CursorPos X="11" Y="9"/>
+        <UsageCount Value="24"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="unit1.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Unit1"/>
-        <EditorIndex Value="1"/>
-        <CursorPos X="29" Y="4"/>
-        <UsageCount Value="21"/>
-        <Loaded Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="19" Y="13"/>
+        <UsageCount Value="24"/>
       </Unit1>
       <Unit2>
         <Filename Value="llculib.pas"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit2>
       <Unit3>
         <Filename Value="llculibplus.pas"/>
-        <EditorIndex Value="4"/>
-        <CursorPos X="19" Y="14"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="32" Y="20"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit3>
       <Unit4>
         <Filename Value="..\..\..\..\..\AppData\Local\Temp\Rar$DIa12640.6322\unit1.pas"/>
@@ -53,42 +50,31 @@
       <Unit6>
         <Filename Value="piles.pas"/>
         <UnitName Value="Piles"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="30"/>
-        <CursorPos X="84" Y="43"/>
-        <UsageCount Value="10"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="107" Y="57"/>
+        <UsageCount Value="12"/>
         <Loaded Value="True"/>
       </Unit6>
+      <Unit7>
+        <Filename Value="..\L’algorithme d’Erathostène\llculib.pas"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="23" Y="7"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\L’algorithme d’Erathostène\llculibplus.pas"/>
+        <EditorIndex Value="3"/>
+        <CursorPos X="27" Y="15"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit8>
     </Units>
-    <JumpHistory Count="6" HistoryIndex="5">
+    <JumpHistory Count="1">
       <Position1>
         <Filename Value="piles.pas"/>
-        <Caret Line="47" Column="21" TopLine="22"/>
+        <Caret Line="57" Column="107" TopLine="38"/>
       </Position1>
-      <Position2>
-        <Filename Value="project1.lpr"/>
-        <Caret Line="55" Column="21" TopLine="28"/>
-      </Position2>
-      <Position3>
-        <Filename Value="piles.pas"/>
-        <Caret Line="47" Column="17" TopLine="30"/>
-      </Position3>
-      <Position4>
-        <Filename Value="project1.lpr"/>
-        <Caret Line="14" Column="23"/>
-      </Position4>
-      <Position5>
-        <Filename Value="piles.pas"/>
-        <Caret Line="8" Column="44" TopLine="3"/>
-      </Position5>
-      <Position6>
-        <Filename Value="project1.lpr"/>
-        <Caret Line="41" Column="7" TopLine="41"/>
-      </Position6>
     </JumpHistory>
-    <RunParams>
-      <FormatVersion Value="2"/>
-      <Modes Count="0" ActiveMode=""/>
-    </RunParams>
   </ProjectSession>
 </CONFIG>
