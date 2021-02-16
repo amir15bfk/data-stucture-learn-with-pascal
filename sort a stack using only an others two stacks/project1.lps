@@ -8,7 +8,9 @@
       <Unit0>
         <Filename Value="project1.lpr"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="27"/>
+        <TopLine Value="51"/>
+        <CursorPos X="7" Y="63"/>
+        <UsageCount Value="28"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -17,7 +19,7 @@
         <UnitName Value="Unit1"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="19" Y="13"/>
-        <UsageCount Value="27"/>
+        <UsageCount Value="28"/>
       </Unit1>
       <Unit2>
         <Filename Value="llculib.pas"/>
@@ -47,10 +49,8 @@
       <Unit6>
         <Filename Value="piles.pas"/>
         <UnitName Value="Piles"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="10"/>
-        <CursorPos X="107" Y="57"/>
+        <CursorPos X="16" Y="37"/>
         <UsageCount Value="13"/>
         <Loaded Value="True"/>
       </Unit6>
@@ -63,7 +63,9 @@
       </Unit7>
       <Unit8>
         <Filename Value="..\L’algorithme d’Erathostène\llculibplus.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
+        <TopLine Value="79"/>
         <CursorPos X="27" Y="15"/>
         <UsageCount Value="13"/>
         <Loaded Value="True"/>

@@ -6,7 +6,7 @@ uses
   {$IFDEF UNIX}{$IFDEF UseCThreads}
   cthreads,
   {$ENDIF}{$ENDIF}
-  Classes,piles
+  Classes,piles, unit2
   { you can add units after this };
 procedure getMin(var p1:pile;var p2 :pile;var min:Integer);
 var x: integer;
