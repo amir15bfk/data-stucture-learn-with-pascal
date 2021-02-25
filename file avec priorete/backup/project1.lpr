@@ -6,7 +6,7 @@ uses
   {$IFDEF UNIX}{$IFDEF UseCThreads}
   cthreads,
   {$ENDIF}{$ENDIF}
-  Classes, fileAvecPriorite
+  Classes, fileAvecPriorite, llcuavanceelib
   { you can add units after this };
 
 begin

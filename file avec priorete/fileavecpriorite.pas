@@ -5,7 +5,7 @@ unit fileAvecPriorite;
 interface
 
 uses
-  Classes, SysUtils,llc;
+  Classes, SysUtils,llculibavence;
 type
   fileP= record
     t,qp,q:liste;

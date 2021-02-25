@@ -7,32 +7,35 @@
       <Unit0>
         <Filename Value="project1.lpr"/>
         <IsPartOfProject Value="True"/>
-        <CursorPos X="9"/>
-        <UsageCount Value="33"/>
+        <CursorPos X="28"/>
+        <UsageCount Value="35"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="fileavecpriorite.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="fileAvecPriorite"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <CursorPos X="10" Y="14"/>
-        <UsageCount Value="33"/>
+        <CursorPos X="34" Y="8"/>
+        <UsageCount Value="35"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
-        <Filename Value="llculib.pas"/>
-        <EditorIndex Value="3"/>
-        <CursorPos X="49" Y="62"/>
-        <UsageCount Value="16"/>
+        <Filename Value="llcuavanceelib.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="14"/>
+        <CursorPos X="36" Y="26"/>
+        <UsageCount Value="35"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
-        <Filename Value="llcuavanceelib.pas"/>
-        <IsPartOfProject Value="True"/>
-        <EditorIndex Value="2"/>
-        <UsageCount Value="33"/>
+        <Filename Value="llculib.pas"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="49"/>
+        <CursorPos X="25"/>
+        <UsageCount Value="17"/>
         <Loaded Value="True"/>
       </Unit3>
       <Unit4>

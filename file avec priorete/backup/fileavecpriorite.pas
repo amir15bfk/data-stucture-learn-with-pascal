@@ -11,8 +11,8 @@ type
     t,qp,q:liste;
 
   end;
-procedure
-
+procedure emfiler(var f:fileP;x:integer;p:boolean);
+procedure dismfiler(var f:fileP;x:integer;p:boolean);
 
 implementation
 
