@@ -2,18 +2,47 @@
 <CONFIG>
   <ProjectSession>
     <PathDelim Value="\"/>
-    <Version Value="10"/>
+    <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="1">
+    <Units Count="5">
       <Unit0>
         <Filename Value="recursion.pas"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="19"/>
         <CursorPos X="21" Y="38"/>
-        <UsageCount Value="21"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit0>
+      <Unit1>
+        <Filename Value="..\file avec priorete\fileavecpriorite.pas"/>
+        <UnitName Value="fileAvecPriorite"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="18" Y="24"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\file avec priorete\llcuavanceelib.pas"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="4"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\file avec priorete\llculibplus.pas"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="50"/>
+        <CursorPos X="25" Y="73"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\file avec priorete\llculib.pas"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="17" Y="18"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit4>
     </Units>
     <JumpHistory Count="2" HistoryIndex="1">
       <Position1>
@@ -25,5 +54,9 @@
         <Caret Line="26" Column="27" TopLine="18"/>
       </Position2>
     </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode="default"/>
+    </RunParams>
   </ProjectSession>
 </CONFIG>

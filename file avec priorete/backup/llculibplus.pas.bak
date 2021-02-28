@@ -8,22 +8,22 @@ uses llculib;
 
 type
     TRetour = record
-      prec, cour : Liste;
+      prec, cour : TListe;
     end;
 
-procedure AfficherListe(l:Liste);
-function AjouterEnTete(var l:Liste; x:TypeDeBase;pr:boolean) : boolean;
-function Rechercher(l:liste;x:TypeDeBase):boolean;
-function Supprimer(var l:Liste;x:TypeDeBase):boolean;
-function RechercheNonBooleenne(l:liste;x:TypeDeBase):TRetour;
+procedure AfficherListe(l:TListe);
+function AjouterEnTete(var l:TListe; x:TypeDeBase) : boolean;
+function Rechercher(l:Tliste;x:TypeDeBase):boolean;
+function Supprimer(var l:TListe;x:TypeDeBase):boolean;
+function RechercheNonBooleenne(l:Tliste;x:TypeDeBase):TRetour;
 
 implementation
-function Rechercher(l:liste;x:TypeDeBase):boolean;
+function Rechercher(l:Tliste;x:TypeDeBase):boolean;
 var
          trouve:boolean;
 begin
      trouve:= false;
-     while (not trouve) and (l<>nil) do
+     while (not trouve) and (l<>NULL) do
            if x = valeur(l) then
               trouve := true
            else
@@ -31,15 +31,15 @@ begin
      Rechercher := trouve;
 end;
 
-function RechercheNonBooleenne(l:liste;x:TypeDeBase):TRetour;
+function RechercheNonBooleenne(l:Tliste;x:TypeDeBase):TRetour;
 var
          trouve:boolean;
          retour : TRetour;
 begin
-     retour.prec  := nil;
+     retour.prec  := NULL;
      retour.cour := l;
      trouve:= false;
-     while (not trouve) and (retour.cour<>nil) do
+     while (not trouve) and (retour.cour<>NULL) do
            if x = valeur(retour.cour) then
               trouve := true
            else
@@ -50,15 +50,15 @@ begin
      RechercheNonBooleenne := retour;
 end;
 
-function Supprimer(var l:Liste;x:TypeDeBase):boolean;
+function Supprimer(var l:TListe;x:TypeDeBase):boolean;
 var
          retour:TRetour;
          sortie : boolean;
 begin
      retour := RechercheNonBooleenne(l,x);
-     if retour.cour <> nil then     (*l'élément à supprimer a été trouvé *)
+     if retour.cour <> NULL then     (*l'élément à supprimer a été trouvé *)
      begin
-        if retour.prec = nil then   (*l'élément est en tête de liste *)
+        if retour.prec = NULL then   (*l'élément est en tête de liste *)
            l := adr(l)
         else
             aff_adr(retour.prec, adr(retour.cour));
@@ -70,36 +70,33 @@ begin
          sortie := false;
 end;
 
-procedure AfficherListe(l:Liste);
+procedure AfficherListe(l:TListe);
 begin
-     while l<>nil do
+     while l<>NULL do
      begin
-          write(valeur(l),' ',priorite(l));
-
+          write(valeur(l));
           l := adr(l);
-          if l = nil then
+          if l = NULL then
              writeln('.')
           else
               write(' -> ');
      end;
 end;
 
-function AjouterEnTete(var l:Liste; x:TypeDeBase;pr:boolean):boolean;
+function AjouterEnTete(var l:TListe; x:TypeDeBase):boolean;
 var
-   p:Liste;
+   p:TListe;
    sortie : boolean;
 begin
      new(p);
      sortie := false;
-     if p<>nil then
+     if p<>NULL then
      begin
           aff_val(p, x);
           aff_adr(p,l);
-          aff_priorite(p,pr  );
           l := p;
           sortie := true;
      end;
-     AjouterEnTete:=sortie;
 end;
 end.
 

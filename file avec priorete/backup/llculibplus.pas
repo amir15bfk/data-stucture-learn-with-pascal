@@ -12,7 +12,7 @@ type
     end;
 
 procedure AfficherListe(l:Liste);
-function AjouterEnTete(var l:Liste; x:TypeDeBase;pr:boolean) : boolean;
+function AjouterEnTete(var l:Liste; x:TypeDeBase) : boolean;
 function Rechercher(l:liste;x:TypeDeBase):boolean;
 function Supprimer(var l:Liste;x:TypeDeBase):boolean;
 function RechercheNonBooleenne(l:liste;x:TypeDeBase):TRetour;
