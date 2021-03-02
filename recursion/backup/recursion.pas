@@ -50,14 +50,35 @@ begin
  if n = 1  then
  sum:=1
  else
-   sum:=n+sum(n+1);
+   sum:=n+sum(n-1);
 
 end;
+function minR( T:array of  integer ;s:integer ;e:integer):integer;
+var temp:integer;
+begin
 
+ if s=e then
+ begin
+ minR := T[s];
+ end
+ else begin
+    temp:=minR(T,s+1,e);
+   if (T[s]<temp) then
+      minR:=T[s]
+      else minR :=temp;
+   end;
+end;
+var T:array [0..5] of  integer ;
 begin
   //hanoi(3,'A','C','B');
   //writeln(pgcd(16,12));
-  writeln(sum(3));
+  //writeln(sum(3));
+  T[1]:=5;
+  T[2]:=3;
+  T[3]:=6;
+  T[4]:=2;
+  T[5]:=1;
+  writeln(minR(T,1,5));
   readln;
   readln;
 end.
