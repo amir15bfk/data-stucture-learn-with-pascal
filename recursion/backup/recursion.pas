@@ -33,9 +33,22 @@ begin
        end;
 
 end;
+function CBD(n:integer):integer;
+begin
+    if n<>0 then CBD:=n mod 10 + CBD(n div 10)*2
+    else CBD:=0;
+end;
+function PGCD(a,b:integer):integer;
+var r:integer;
+begin
+ r:= a mod b;
+ if r<>0 then pgcd:= pgcd(b,r)
+ else pgcd:=b;
+end;
 
 begin
-  hanoi(3,'A','B','c');
+  //hanoi(3,'A','C','B');
+  writeln(pgcd(1566,852));
   readln;
   readln;
 end.
