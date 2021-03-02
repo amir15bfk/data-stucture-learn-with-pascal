@@ -4,14 +4,14 @@
     <PathDelim Value="\"/>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="5">
+    <Units Count="6">
       <Unit0>
         <Filename Value="recursion.pas"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="55"/>
-        <CursorPos X="8" Y="60"/>
-        <UsageCount Value="26"/>
+        <TopLine Value="114"/>
+        <CursorPos X="9" Y="129"/>
+        <UsageCount Value="27"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -19,14 +19,14 @@
         <UnitName Value="fileAvecPriorite"/>
         <EditorIndex Value="1"/>
         <CursorPos X="18" Y="24"/>
-        <UsageCount Value="12"/>
+        <UsageCount Value="13"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="..\file avec priorete\llcuavanceelib.pas"/>
         <EditorIndex Value="3"/>
         <TopLine Value="4"/>
-        <UsageCount Value="12"/>
+        <UsageCount Value="13"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
@@ -34,18 +34,26 @@
         <EditorIndex Value="4"/>
         <TopLine Value="50"/>
         <CursorPos X="25" Y="73"/>
-        <UsageCount Value="12"/>
+        <UsageCount Value="13"/>
         <Loaded Value="True"/>
       </Unit3>
       <Unit4>
         <Filename Value="..\file avec priorete\llculib.pas"/>
         <EditorIndex Value="2"/>
         <CursorPos X="17" Y="18"/>
-        <UsageCount Value="12"/>
+        <UsageCount Value="13"/>
         <Loaded Value="True"/>
       </Unit4>
+      <Unit5>
+        <Filename Value="..\sort a stack using only an others two stacks\piles.pas"/>
+        <UnitName Value="Piles"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="31"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit5>
     </Units>
-    <JumpHistory Count="19" HistoryIndex="18">
+    <JumpHistory Count="27" HistoryIndex="26">
       <Position1>
         <Filename Value="recursion.pas"/>
         <Caret Line="38" Column="22" TopLine="18"/>
@@ -122,6 +130,38 @@
         <Filename Value="recursion.pas"/>
         <Caret Line="56" Column="28" TopLine="41"/>
       </Position19>
+      <Position20>
+        <Filename Value="recursion.pas"/>
+        <Caret Line="123" Column="14" TopLine="96"/>
+      </Position20>
+      <Position21>
+        <Filename Value="recursion.pas"/>
+        <Caret Line="138" Column="14" TopLine="108"/>
+      </Position21>
+      <Position22>
+        <Filename Value="recursion.pas"/>
+        <Caret Line="111" Column="5" TopLine="106"/>
+      </Position22>
+      <Position23>
+        <Filename Value="recursion.pas"/>
+        <Caret Line="118" Column="18" TopLine="106"/>
+      </Position23>
+      <Position24>
+        <Filename Value="recursion.pas"/>
+        <Caret Line="138" Column="25" TopLine="111"/>
+      </Position24>
+      <Position25>
+        <Filename Value="recursion.pas"/>
+        <Caret Line="124" Column="15" TopLine="103"/>
+      </Position25>
+      <Position26>
+        <Filename Value="recursion.pas"/>
+        <Caret Line="131" Column="24" TopLine="114"/>
+      </Position26>
+      <Position27>
+        <Filename Value="recursion.pas"/>
+        <Caret Line="129" Column="7" TopLine="116"/>
+      </Position27>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

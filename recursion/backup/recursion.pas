@@ -8,6 +8,10 @@ uses
   {$ENDIF}{$ENDIF}
   Classes
   { you can add units after this };
+type
+  table=array [1..5] of  integer ;
+
+
 function fact(n:integer):Integer;
 begin
   if (n=1) or  (n=0) then
@@ -53,7 +57,7 @@ begin
    sum:=n+sum(n-1);
 
 end;
-function minR( T:array of  integer ;s:integer ;e:integer):integer;
+function minR( T:table ;s:integer ;e:integer):integer;
 var temp:integer;
 begin
 
@@ -68,7 +72,71 @@ begin
       else minR :=temp;
    end;
 end;
-var T:array [0..5] of  integer ;
+function maxR( T:table ;s:integer ;e:integer):integer;
+var temp:integer;
+begin
+
+ if s=e then
+ begin
+ maxR := T[s];
+ end
+ else begin
+    temp:=maxR(T,s+1,e);
+   if (T[s]>temp) then
+      maxR:=T[s]
+      else maxR :=temp;
+   end;
+end;
+function sumRT( T:table ;s:integer ;e:integer):integer; //T[s]+T[s+1]+...+T[e]
+
+begin
+
+ if s=e then
+ begin
+ sumRT := T[e];
+ end
+ else
+    sumRT:=T[s]+sumRT(T,s+1,e);
+
+end;
+function mulRT( T:table ;s:integer ;e:integer):integer;  //T[s]*T[s+1]*...*T[e]
+ var temp:integer;
+begin
+
+ if s=e then
+ begin
+ temp := T[e];
+ end
+ else
+    temp:=T[s]*mulRT(T,s+1,e);
+
+ mulRT := temp;
+
+
+
+end;
+function moyRT( T:table;s:integer ;e:integer):real;
+var sum:real;
+begin
+  if s=e then
+ begin
+ sum := T[e];
+ end
+ else
+    sum:=T[s]+moyRT(T,s+1,e);
+
+
+ if (s=0) then
+ moyRT:=sum/(e-s+1);
+  moyRT:=sum;
+end;
+function moyT( T:table;s:integer ;e:integer):real;
+
+begin
+  moyT:=sumRT(T,s,e)/(e-s+1);
+
+end;
+var T:array [1..5] of  integer ;
 begin
   //hanoi(3,'A','C','B');
   //writeln(pgcd(16,12));
@@ -79,6 +147,11 @@ begin
   T[4]:=2;
   T[5]:=1;
   writeln(minR(T,1,5));
+  writeln(maxR(T,1,5));
+  writeln(sumRT(T,1,5));
+  writeln(mulRT(T,1,5));
+  writeln(moyRT(T,1,5):0:5);
+  writeln(moyT(T,1,5):0:5);
   readln;
   readln;
 end.
