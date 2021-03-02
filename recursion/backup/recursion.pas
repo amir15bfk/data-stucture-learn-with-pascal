@@ -45,10 +45,19 @@ begin
  if r<>0 then pgcd:= pgcd(b,r)
  else pgcd:=b;
 end;
+function sum(n:integer):integer;
+begin
+ if n = 1  then
+ sum:=1
+ else
+   sum:=n+sum(n+1);
+
+end;
 
 begin
   //hanoi(3,'A','C','B');
-  writeln(pgcd(1566,852));
+  //writeln(pgcd(16,12));
+  writeln(sum(3));
   readln;
   readln;
 end.
