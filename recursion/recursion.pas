@@ -33,9 +33,14 @@ begin
        end;
 
 end;
-
+function CBD(n:integer):integer;
 begin
-  hanoi(3,'A','C','B');
+    if n<>0 then CBD:=n mod 10 + CBD(n div 10)*2
+    else CBD:=0;
+end;
+begin
+  //hanoi(3,'A','C','B');
+  writeln(CBD(1111));
   readln;
   readln;
 end.

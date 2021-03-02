@@ -7,7 +7,8 @@
       <Unit0>
         <Filename Value="project1.lpr"/>
         <IsPartOfProject Value="True"/>
-        <CursorPos X="17" Y="11"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="23" Y="22"/>
         <UsageCount Value="36"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -15,9 +16,8 @@
         <Filename Value="fileavecpriorite.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="fileAvecPriorite"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="19"/>
+        <TopLine Value="55"/>
         <CursorPos X="9" Y="38"/>
         <UsageCount Value="36"/>
         <Loaded Value="True"/>

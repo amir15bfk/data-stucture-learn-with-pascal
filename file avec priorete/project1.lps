@@ -9,7 +9,7 @@
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
         <CursorPos X="23" Y="22"/>
-        <UsageCount Value="36"/>
+        <UsageCount Value="41"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -19,42 +19,42 @@
         <EditorIndex Value="1"/>
         <TopLine Value="55"/>
         <CursorPos X="9" Y="38"/>
-        <UsageCount Value="36"/>
+        <UsageCount Value="41"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="llcuavanceelib.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="4"/>
+        <TopLine Value="9"/>
         <CursorPos X="36" Y="26"/>
-        <UsageCount Value="36"/>
+        <UsageCount Value="41"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
         <Filename Value="llculib.pas"/>
         <EditorIndex Value="4"/>
         <CursorPos X="12" Y="64"/>
-        <UsageCount Value="18"/>
+        <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit3>
       <Unit4>
         <Filename Value="../llcu/llcuavanceelib.pas"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit4>
       <Unit5>
         <Filename Value="../L’algorithme d’Erathostène/llculibplus.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="79"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit5>
       <Unit6>
         <Filename Value="llculibplus.pas"/>
         <EditorIndex Value="3"/>
         <TopLine Value="83"/>
         <CursorPos X="60" Y="15"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="13"/>
         <Loaded Value="True"/>
       </Unit6>
     </Units>
