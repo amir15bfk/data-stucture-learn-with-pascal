@@ -141,6 +141,31 @@ begin
  end;
 
 end;
+//roman to decimal
+  function eval(r:char):integer;
+  begin
+   case (r) of
+   'M':eval:=1000;
+   'D':eval:=500;
+   'C':eval:=100;
+   'L':eval:=50;
+   'X':eval:=10;
+   'V':eval:=5;
+   'I':eval:=1;
+end;
+  end;
+function RtoD(R:String):integer;
+begin
+ if (length(R)=0) then
+ RtoD:=0
+ else if (length(R)=0) then
+ RtoD:= eval(R[1])
+ else if (eval(R[1])<eval(R[2])) then
+ RtoD:= eval(R[2])- eval(R[1])+RtoD(copy(R,3,length(R)-2))
+ else
+   RtoD:= eval(R[1])+RtoD(copy(R,2,length(R)-1));
+
+end;
 
 var T:array [1..5] of  integer ;  s:String;
 begin
@@ -158,9 +183,9 @@ begin
   //writeln(mulRT(T,1,5));
   //writeln(moyT(T,1,5):0:5);
   //writeln(valPascal(4,2));
-  //affMPascal(170);
-  s:='hello';
-writeln (s.length);
+  //affMPascal(15);
+  s:='IV';
+  writeln (RtoD(s));
   readln;
   readln;
 end.
