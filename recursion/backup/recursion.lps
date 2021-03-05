@@ -2,58 +2,52 @@
 <CONFIG>
   <ProjectSession>
     <PathDelim Value="\"/>
-    <Version Value="11"/>
+    <Version Value="10"/>
     <BuildModes Active="Default"/>
     <Units Count="6">
       <Unit0>
         <Filename Value="recursion.pas"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="114"/>
-        <CursorPos X="9" Y="129"/>
-        <UsageCount Value="27"/>
+        <TopLine Value="142"/>
+        <CursorPos X="11" Y="163"/>
+        <UsageCount Value="30"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="..\file avec priorete\fileavecpriorite.pas"/>
         <UnitName Value="fileAvecPriorite"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <CursorPos X="18" Y="24"/>
         <UsageCount Value="13"/>
-        <Loaded Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="..\file avec priorete\llcuavanceelib.pas"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="4"/>
+        <EditorIndex Value="-1"/>
         <UsageCount Value="13"/>
-        <Loaded Value="True"/>
       </Unit2>
       <Unit3>
         <Filename Value="..\file avec priorete\llculibplus.pas"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="50"/>
         <CursorPos X="25" Y="73"/>
         <UsageCount Value="13"/>
-        <Loaded Value="True"/>
       </Unit3>
       <Unit4>
         <Filename Value="..\file avec priorete\llculib.pas"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="49"/>
         <CursorPos X="17" Y="18"/>
         <UsageCount Value="13"/>
-        <Loaded Value="True"/>
       </Unit4>
       <Unit5>
         <Filename Value="..\sort a stack using only an others two stacks\piles.pas"/>
         <UnitName Value="Piles"/>
-        <EditorIndex Value="5"/>
-        <TopLine Value="31"/>
+        <EditorIndex Value="-1"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit5>
     </Units>
-    <JumpHistory Count="27" HistoryIndex="26">
+    <JumpHistory Count="29" HistoryIndex="28">
       <Position1>
         <Filename Value="recursion.pas"/>
         <Caret Line="38" Column="22" TopLine="18"/>
@@ -162,10 +156,14 @@
         <Filename Value="recursion.pas"/>
         <Caret Line="129" Column="7" TopLine="116"/>
       </Position27>
+      <Position28>
+        <Filename Value="recursion.pas"/>
+        <Caret Line="161" Column="5" TopLine="142"/>
+      </Position28>
+      <Position29>
+        <Filename Value="recursion.pas"/>
+        <Caret Line="136" Column="8" TopLine="125"/>
+      </Position29>
     </JumpHistory>
-    <RunParams>
-      <FormatVersion Value="2"/>
-      <Modes Count="0" ActiveMode="default"/>
-    </RunParams>
   </ProjectSession>
 </CONFIG>

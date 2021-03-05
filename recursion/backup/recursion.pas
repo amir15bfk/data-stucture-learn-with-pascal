@@ -111,47 +111,56 @@ begin
     temp:=T[s]*mulRT(T,s+1,e);
 
  mulRT := temp;
-
-
-
 end;
-function moyRT( T:table;s:integer ;e:integer):real;
-var sum:real;
-begin
-  if s=e then
- begin
- sum := T[e];
- end
- else
-    sum:=T[s]+moyRT(T,s+1,e);
 
-
- if (s=0) then
- moyRT:=sum/(e-s+1);
-  moyRT:=sum;
-end;
 function moyT( T:table;s:integer ;e:integer):real;
 
 begin
   moyT:=sumRT(T,s,e)/(e-s+1);
 
 end;
-var T:array [1..5] of  integer ;
+function valPascal(i,j:integer):integer;
+begin
+ if (j>i)then valPascal:=0
+ else
+ if (i=j) or (j=0)  then
+ valPascal:=1
+ else valPascal:=valPascal(i-1,j)+valPascal(i-1,j-1);
+
+end;
+
+
+procedure affMPascal(n:integer);
+var i,j:integer;
+begin
+ for i:=0 to n do
+ begin
+ for j:=0 to i do
+ write(valPascal(i,j),' ');
+ writeln();
+ end;
+
+end;
+
+var T:array [1..5] of  integer ;  s:String;
 begin
   //hanoi(3,'A','C','B');
   //writeln(pgcd(16,12));
   //writeln(sum(3));
-  T[1]:=5;
-  T[2]:=3;
-  T[3]:=6;
-  T[4]:=2;
-  T[5]:=1;
-  writeln(minR(T,1,5));
-  writeln(maxR(T,1,5));
-  writeln(sumRT(T,1,5));
-  writeln(mulRT(T,1,5));
-  writeln(moyRT(T,1,5):0:5);
-  writeln(moyT(T,1,5):0:5);
+  //T[1]:=5;
+  //T[2]:=3;
+  //T[3]:=6;
+  //T[4]:=2;
+  //T[5]:=1;
+  //writeln(minR(T,1,5));
+  //writeln(maxR(T,1,5));
+  //writeln(sumRT(T,1,5));
+  //writeln(mulRT(T,1,5));
+  //writeln(moyT(T,1,5):0:5);
+  //writeln(valPascal(4,2));
+  //affMPascal(170);
+  s:='hello';
+writeln (s.length);
   readln;
   readln;
 end.
