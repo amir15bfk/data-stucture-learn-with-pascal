@@ -8,13 +8,13 @@ uses llculib;
  const
    NULL = nil;
 type
-
+      memory = liste;
     TRetour = record
       prec, cour : Liste;
     end;
 
-procedure AfficherListe(l:Liste);
-function AjouterEnTete(var l:Liste; x:TypeDeBase) : boolean;
+procedure AfficherMemory(l:memory);
+function AjouterEnTete(var l:Liste; x,y:TypeDeBase) : boolean;
 function Rechercher(l:liste;x:TypeDeBase):boolean;
 function Supprimer(var l:Liste;x:TypeDeBase):boolean;
 function RechercheNonBooleenne(l:liste;x:TypeDeBase):TRetour;
@@ -72,7 +72,7 @@ begin
          sortie := false;
 end;
 
-procedure AfficherListe(l:Liste);
+procedure AfficherListe(l:memory);
 begin
      while l<>NULL do
      begin
@@ -85,7 +85,7 @@ begin
      end;
 end;
 
-function AjouterEnTete(var l:Liste; x:TypeDeBase; y:TypeDeBase):boolean;
+function AjouterEnTete(var l:Liste; x,y:TypeDeBase):boolean;
 var
    p:Liste;
    sortie : boolean;

@@ -8,12 +8,12 @@ uses llculib;
  const
    NULL = nil;
 type
-
+      memory = liste;
     TRetour = record
       prec, cour : Liste;
     end;
 
-procedure AfficherListe(l:Liste);
+procedure AfficherMemory(l:memory);
 function AjouterEnTete(var l:Liste; x,y:TypeDeBase) : boolean;
 function Rechercher(l:liste;x:TypeDeBase):boolean;
 function Supprimer(var l:Liste;x:TypeDeBase):boolean;
@@ -72,7 +72,7 @@ begin
          sortie := false;
 end;
 
-procedure AfficherListe(l:Liste);
+procedure AfficherMemory(l:memory);
 begin
      while l<>NULL do
      begin
