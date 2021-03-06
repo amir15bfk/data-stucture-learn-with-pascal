@@ -16,7 +16,7 @@ type
 procedure AfficherMemory(l:memory);
 function AddInTheBegin(var l:memory; x,y:TypeDeBase) : boolean;
 function Rechercher(l:memory;x:TypeDeBase):boolean;
-function Supprimer(var l:memory;x:TypeDeBase):boolean;
+procedure Supprimer(var l:memory;x:TypeDeBase);
 function RechercheNonBooleenne(l:memory;x:TypeDeBase):TRetour;
 
 implementation
@@ -52,10 +52,10 @@ begin
      RechercheNonBooleenne := retour;
 end;
 
-function Supprimer(var l:memory;x:TypeDeBase):boolean;
+procedure Supprimer(var l:memory;x:TypeDeBase);
 var
          retour:TRetour;
-         sortie : boolean;
+
 begin
      retour := RechercheNonBooleenne(l,x);
      if retour.cour <> NULL then     (*l'élément à supprimer a été trouvé *)
@@ -65,11 +65,9 @@ begin
         else
             aff_adr(retour.prec, adr(retour.cour));
         libere(retour.cour);
-        sortie := true
+
      end
-     else
-         (*l'élément à supprimer n'a pas été trouvé *)
-         sortie := false;
+
 end;
 
 procedure AfficherMemory(l:memory);

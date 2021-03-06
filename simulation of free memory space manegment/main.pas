@@ -12,9 +12,11 @@ uses
 var M:memory; adrA,adrB,adrC:integer;
 
 begin
-  //initMemory(m);
-  //firstFit(m,1000);
-  m:=nil;
+  initMemory(m);
+  firstFit(m,1000);
+  libere(m,300,250);
+  AfficherMemory(m);
+  {m:=nil;
   AddInTheBegin(m,3000,800);
   AddInTheBegin(m,700,1800);
   AddInTheBegin(m,300,250);
@@ -25,7 +27,7 @@ begin
   AfficherMemory(m);
   adrC:=firstFit(m,800);
   AfficherMemory(m);
-  writeln(' adrA = ' ,adrA,'  adrB = ' ,adrB,'  adrC = ' ,adrC);
+  writeln(' adrA = ' ,adrA,'  adrB = ' ,adrB,'  adrC = ' ,adrC);  }
 
 
 
