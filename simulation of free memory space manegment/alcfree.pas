@@ -11,7 +11,7 @@ const
 
 
 procedure initMemory(var M:memory);
-function firstFit(var M : memory;T:integer):boolean;
+function firstFit(var M : memory;T:integer):integer;
 implementation
   procedure initMemory(var M:memory);
   begin
@@ -19,21 +19,24 @@ implementation
     aff_fadr(m,0);
     aff_taille(m,memsize);
   end;
-  function firstFit(var M : memory;T:integer):boolean;
-  var p:liste;  B:boolean;
+  function firstFit(var M : memory;T:integer):integer;
+  var p:liste; s:integer;
   begin
     p:=m;
-    B:=false ;
-    while(p<>nil) and (not B) do
+    s:=-1 ;
+    while(p<>nil) and (s <0) do
       begin
            if taille(p)>=T then
            begin
-           b:=true;
+           s:=fadr(p);
            aff_taille(p, taille(p)-T);
            aff_fadr(p, fadr(p)+T);
            end;
+           p:=adr(p);
       end;
 
+    Supprimer(m,0);
+    firstFit:=s;
   end;
 
 end.
