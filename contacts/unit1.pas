@@ -118,7 +118,7 @@ begin
 
 procedure TForm1.Button4Click(Sender: TObject);
 begin
-  j:=1;
+o  j:=1;
   while (j<i) do
   begin
   if

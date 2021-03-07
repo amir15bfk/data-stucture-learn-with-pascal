@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1535575190"/>
+  <Params Value=" -MObjFPC -Scghi -Cg -O1 -g -gl -l -vewnhibq -Fi/home/amir/Documents/codes/data-stucture-learn-with-pascal/contacts/lib/x86_64-linux -Fu/usr/lib/lazarus/1.8.2/lcl/units/x86_64-linux/gtk2 -Fu/usr/lib/lazarus/1.8.2/lcl/units/x86_64-linux -Fu/usr/lib/lazarus/1.8.2/components/lazutils/lib/x86_64-linux -Fu/usr/lib/lazarus/1.8.2/packager/units/x86_64-linux -Fu/home/amir/Documents/codes/data-stucture-learn-with-pascal/contacts/ -FU/home/amir/Documents/codes/data-stucture-learn-with-pascal/contacts/lib/x86_64-linux/ -dLCL -dLCLgtk2 project1.lpr"/>
+  <Complete Value="False"/>
+</CONFIG>

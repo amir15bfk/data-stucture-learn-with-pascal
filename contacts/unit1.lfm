@@ -11,133 +11,160 @@ object Form1: TForm1
   Caption = 'contacts'
   ClientHeight = 237
   ClientWidth = 293
+  DesignTimePPI = 144
   Font.Color = clBlack
-  LCLVersion = '2.0.4.0'
+  LCLVersion = '1.8.2.0'
   object Label1: TLabel
-    Left = 48
-    Height = 15
-    Top = 8
-    Width = 66
+    Left = 72
+    Height = 23
+    Top = 12
+    Width = 109
     Caption = 'family name'
+    Font.Color = clBlack
     ParentColor = False
+    ParentFont = False
   end
   object Edit1: TEdit
-    Left = 16
-    Height = 23
+    Left = 24
+    Height = 40
     Hint = 'eg :Benbachir'
-    Top = 32
-    Width = 128
+    Top = 48
+    Width = 192
+    Font.Color = clBlack
+    ParentFont = False
     ParentShowHint = False
     ShowHint = True
     TabOrder = 0
     TextHint = 'eg : Benbachir'
   end
   object Label2: TLabel
-    Left = 64
-    Height = 15
-    Top = 64
-    Width = 30
+    Left = 96
+    Height = 23
+    Top = 96
+    Width = 49
     Caption = 'name'
+    Font.Color = clBlack
     ParentColor = False
+    ParentFont = False
   end
   object Edit2: TEdit
-    Left = 16
-    Height = 23
-    Top = 88
-    Width = 128
+    Left = 24
+    Height = 40
+    Top = 132
+    Width = 192
+    Font.Color = clBlack
+    ParentFont = False
     ParentShowHint = False
     ShowHint = True
     TabOrder = 1
     TextHint = 'eg : Mohamed Amir'
   end
   object Label3: TLabel
-    Left = 40
-    Height = 15
-    Top = 120
-    Width = 79
+    Left = 60
+    Height = 23
+    Top = 180
+    Width = 132
     Caption = 'phone number'
+    Font.Color = clBlack
     ParentColor = False
+    ParentFont = False
   end
   object Edit3: TEdit
-    Left = 16
-    Height = 23
-    Top = 145
-    Width = 128
+    Left = 24
+    Height = 40
+    Top = 218
+    Width = 192
+    Font.Color = clBlack
+    ParentFont = False
     ParentShowHint = False
     ShowHint = True
     TabOrder = 2
     TextHint = 'eg : 06667799'
   end
   object Button1: TButton
-    Left = 16
-    Height = 44
-    Top = 184
-    Width = 63
+    Left = 24
+    Height = 66
+    Top = 276
+    Width = 94
     Caption = 'add'
+    Font.Color = clBlack
     OnClick = Button1Click
+    ParentFont = False
     TabOrder = 3
   end
   object Button2: TButton
-    Left = 80
-    Height = 44
-    Top = 184
-    Width = 64
+    Left = 120
+    Height = 66
+    Top = 276
+    Width = 96
     Caption = 'find'
+    Font.Color = clBlack
     OnClick = Button2Click
+    ParentFont = False
     TabOrder = 4
   end
   object Button3: TButton
-    Left = 152
-    Height = 44
-    Top = 184
-    Width = 64
+    Left = 228
+    Height = 66
+    Top = 276
+    Width = 96
     Caption = 'sup'
+    Font.Color = clBlack
     OnClick = Button3Click
+    ParentFont = False
     TabOrder = 5
   end
   object Label4: TLabel
-    Left = 192
+    Left = 288
     Height = 1
-    Top = 8
+    Top = 12
     Width = 1
     Font.Color = clBlue
     ParentColor = False
     ParentFont = False
   end
   object Button4: TButton
-    Left = 152
-    Height = 22
-    Top = 32
-    Width = 128
+    Left = 228
+    Height = 33
+    Top = 48
+    Width = 192
     Caption = 'find by family name'
+    Font.Color = clBlack
     OnClick = Button4Click
+    ParentFont = False
     TabOrder = 6
   end
   object Button5: TButton
-    Left = 152
-    Height = 22
-    Top = 88
-    Width = 128
+    Left = 228
+    Height = 33
+    Top = 132
+    Width = 192
     Caption = 'find by name'
+    Font.Color = clBlack
     OnClick = Button5Click
+    ParentFont = False
     TabOrder = 7
   end
   object Button6: TButton
-    Left = 152
-    Height = 22
-    Top = 145
-    Width = 128
+    Left = 228
+    Height = 33
+    Top = 218
+    Width = 192
     Caption = 'find by phone number'
+    Font.Color = clBlack
     OnClick = Button6Click
+    ParentFont = False
     TabOrder = 8
   end
   object Button7: TButton
-    Left = 216
-    Height = 44
-    Top = 184
-    Width = 64
+    Left = 324
+    Height = 66
+    Top = 276
+    Width = 96
     Caption = 'clear'
+    Font.Color = clBlack
     OnClick = Button7Click
+    ParentFont = False
     TabOrder = 9
   end
 end

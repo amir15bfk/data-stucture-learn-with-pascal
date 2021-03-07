@@ -21,7 +21,7 @@ begin
   libere(m,5000,350);
 
   writeln(bestFit(m,290));
-
+  writeln(worstFit(m,290));
   AfficherMemory(m);
   {nextFit(m,lastfit,150);
   AfficherMemory(m);

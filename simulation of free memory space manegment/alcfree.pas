@@ -17,6 +17,7 @@ function bestFit(var M : liste;T:integer):integer;
 function worstFit(var M : liste;T:integer):integer;
 procedure libere(var m:liste;A,T:integer);
 procedure chack(var m:liste);
+function FreeSpace(var m:liste):integer;
 implementation
 procedure initMemory(var M:liste);
   begin
@@ -200,6 +201,21 @@ begin
   end;
   Supprimer(m,0);
   worstFit:=s;
+end;
+function FreeSpace(var m:liste):integer;
+var p:liste; sum:integer;
+begin
+  p:=m;
+  sum:=0;
+  while p<>nil do
+    begin
+    writeln(fadr(p),'     ',taille(p));
+    sum:=sum+taille(p);
+    p:=adr(p);
+    end;
+  writeln('-----------------------');
+  writeln(' sum    ',sum);
+   freespace:=sum;
 end;
 
 end.
