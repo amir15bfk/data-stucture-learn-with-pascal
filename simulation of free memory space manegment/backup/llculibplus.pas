@@ -10,17 +10,17 @@ uses llculib;
 type
       memory = liste;
     TRetour = record
-      prec, cour : Liste;
+      prec, cour : memory;
     end;
 
 procedure AfficherMemory(l:memory);
-function AjouterEnTete(var l:Liste; x,y:TypeDeBase) : boolean;
-function Rechercher(l:liste;x:TypeDeBase):boolean;
-function Supprimer(var l:Liste;x:TypeDeBase):boolean;
-function RechercheNonBooleenne(l:liste;x:TypeDeBase):TRetour;
+function AddInTheBegin(var l:memory; x,y:TypeDeBase) : boolean;
+function Rechercher(l:memory;x:TypeDeBase):boolean;
+procedure Supprimer(var l:memory;x:TypeDeBase);
+function RechercheNonBooleenne(l:memory;x:TypeDeBase):TRetour;
 
 implementation
-function Rechercher(l:liste;x:TypeDeBase):boolean;
+function Rechercher(l:memory;x:TypeDeBase):boolean;
 var
          trouve:boolean;
 begin
@@ -33,7 +33,7 @@ begin
      Rechercher := trouve;
 end;
 
-function RechercheNonBooleenne(l:liste;x:TypeDeBase):TRetour;
+function RechercheNonBooleenne(l:memory;x:TypeDeBase):TRetour;
 var
          trouve:boolean;
          retour : TRetour;
@@ -52,10 +52,10 @@ begin
      RechercheNonBooleenne := retour;
 end;
 
-function Supprimer(var l:Liste;x:TypeDeBase):boolean;
+procedure Supprimer(var l:memory;x:TypeDeBase);
 var
          retour:TRetour;
-         sortie : boolean;
+
 begin
      retour := RechercheNonBooleenne(l,x);
      if retour.cour <> NULL then     (*l'élément à supprimer a été trouvé *)
@@ -65,29 +65,27 @@ begin
         else
             aff_adr(retour.prec, adr(retour.cour));
         libere(retour.cour);
-        sortie := true
+
      end
-     else
-         (*l'élément à supprimer n'a pas été trouvé *)
-         sortie := false;
+
 end;
 
-procedure AfficherListe(l:memory);
+procedure AfficherMemory(l:memory);
 begin
      while l<>NULL do
      begin
           write('|',fadr(l),'|',taille(l),'|');
           l := adr(l);
           if l = NULL then
-             writeln(' -#')
+             writeln('--#')
           else
               write(' -> ');
      end;
 end;
 
-function AjouterEnTete(var l:Liste; x,y:TypeDeBase):boolean;
+function AddInTheBegin(var l:memory; x,y:TypeDeBase):boolean;
 var
-   p:Liste;
+   p:memory;
    sortie : boolean;
 begin
      new(p);
