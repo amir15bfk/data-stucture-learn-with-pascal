@@ -8,7 +8,8 @@
       <Unit0>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <CursorPos X="3" Y="17"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="10" Y="20"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -35,7 +36,7 @@
         <Filename Value="llculibplus.pas"/>
         <EditorIndex Value="2"/>
         <TopLine Value="59"/>
-        <CursorPos X="25" Y="75"/>
+        <CursorPos X="26" Y="75"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit4>
@@ -51,7 +52,6 @@
         <Filename Value="alcfree.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="AlcFree"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <CursorPos X="30" Y="8"/>
         <UsageCount Value="20"/>
