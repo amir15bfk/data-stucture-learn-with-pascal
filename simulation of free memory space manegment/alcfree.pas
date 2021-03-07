@@ -13,6 +13,8 @@ const
 procedure initMemory(var M:liste);
 function firstFit(var M : liste;T:integer):integer;
 function nextFit(var M : liste;var lastFit:liste;T:integer):integer;
+function bestFit(var M : liste;T:integer):integer;
+function worstFit(var M : liste;T:integer):integer;
 procedure libere(var m:liste;A,T:integer);
 procedure chack(var m:liste);
 implementation
@@ -133,6 +135,72 @@ function nextFit(var M : liste;var lastFit:liste;T:integer):integer;
     nextFit:=s;
 
   end;
+function bestFit(var M : liste;T:integer):integer;
+var p,best:liste; s,bestT:integer;
+begin
+  p:=m;
+  s:=-1 ;
+
+  while(p<>nil) and (s<0) do
+    begin
+         if taille(p)>=T then
+         begin
+         s:=fadr(p);
+         best:=p;
+         bestT:= taille(p);
+         end;
+         p:=adr(p);
+    end;
+  while(p<>nil) do
+    begin
+    if (taille(p)>=T) and (taille(p)<bestT) then
+    begin
+         s:=fadr(p);
+         best:=p;
+         bestT:= taille(p);
+    end;
+    p:=adr(p);
+    end;
+  if s>0 then begin
+           aff_taille(best, taille(best)-T);
+           aff_fadr(best, fadr(best)+T);
+  end;
+  Supprimer(m,0);
+  bestFit:=s;
+end;
+function worstFit(var M : liste;T:integer):integer;
+var p,worst:liste; s,worstT:integer;
+begin
+  p:=m;
+  s:=-1 ;
+
+  while(p<>nil) and (s<0) do
+    begin
+         if taille(p)>=T then
+         begin
+         s:=fadr(p);
+         worst:=p;
+         worstT:= taille(p);
+         end;
+         p:=adr(p);
+    end;
+  while(p<>nil) do
+    begin
+    if (taille(p)>=T) and (taille(p)>worstT) then
+    begin
+         s:=fadr(p);
+         worst:=p;
+         worstT:= taille(p);
+    end;
+    p:=adr(p);
+    end;
+  if s>0 then begin
+           aff_taille(worst, taille(worst)-T);
+           aff_fadr(worst, fadr(worst)+T);
+  end;
+  Supprimer(m,0);
+  worstFit:=s;
+end;
 
 end.
 

@@ -19,8 +19,11 @@ begin
   libere(m,3000,800);
   libere(m,3900,300);
   libere(m,5000,350);
+
+  writeln(bestFit(m,290));
+  writeln(worstFit(m,290));
   AfficherMemory(m);
-  nextFit(m,lastfit,150);
+  {nextFit(m,lastfit,150);
   AfficherMemory(m);
   nextFit(m,lastfit,150);
   AfficherMemory(m);
@@ -33,7 +36,7 @@ begin
   nextFit(m,lastfit,20);
   AfficherMemory(m);
   libere(m,3000,4000);
-  afficherMemory(m);
+  afficherMemory(m);}
   {m:=nil;
   AddInTheBegin(m,3000,800);
   AddInTheBegin(m,700,1800);
