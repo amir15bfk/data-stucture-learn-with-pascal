@@ -19,7 +19,12 @@ begin
   libere(m,3000,800);
   libere(m,3900,300);
   libere(m,5000,350);
-  libere(m,3000,4000);
+  AfficherMemory(m);
+  nextFit(m,lastfit,150);
+  AfficherMemory(m);
+  nextFit(m,lastfit,150);
+  AfficherMemory(m);
+  nextFit(m,lastfit,20);
   AfficherMemory(m);
   nextFit(m,lastfit,150);
   AfficherMemory(m);
@@ -28,13 +33,7 @@ begin
   nextFit(m,lastfit,20);
   AfficherMemory(m);
   libere(m,3000,4000);
-  AfficherMemory(m);
-  nextFit(m,lastfit,150);
-  AfficherMemory(m);
-  nextFit(m,lastfit,150);
-  AfficherMemory(m);
-  nextFit(m,lastfit,20);
-  AfficherMemory(m);
+  afficherMemory(m);
   {m:=nil;
   AddInTheBegin(m,3000,800);
   AddInTheBegin(m,700,1800);

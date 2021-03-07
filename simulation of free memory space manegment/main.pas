@@ -26,8 +26,6 @@ begin
   AfficherMemory(m);
   nextFit(m,lastfit,20);
   AfficherMemory(m);
-
-  AfficherMemory(m);
   nextFit(m,lastfit,150);
   AfficherMemory(m);
   nextFit(m,lastfit,150);
@@ -35,6 +33,7 @@ begin
   nextFit(m,lastfit,20);
   AfficherMemory(m);
   libere(m,3000,4000);
+  afficherMemory(m);
   {m:=nil;
   AddInTheBegin(m,3000,800);
   AddInTheBegin(m,700,1800);
@@ -47,8 +46,7 @@ begin
   adrC:=firstFit(m,800);
   AfficherMemory(m);
   writeln(' adrA = ' ,adrA,'  adrB = ' ,adrB,'  adrC = ' ,adrC);  }
-  readln;
-  readln;
+
 
 
 

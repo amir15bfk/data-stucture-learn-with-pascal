@@ -65,6 +65,13 @@ begin
       while  (p<>nil)and (not doSameThink) do
         begin
         if ((fadr(q)+taille(q))>=fadr(p)) then
+        if  ((fadr(q)+taille(q))>=(fadr(p)+taille(p)))  then
+
+        begin
+           aff_taille(p,0);
+          doSameThink:=true;
+          end
+        else
         begin
           aff_taille(q,taille(q)+ abs(fadr(p)+taille(p)-fadr(q)-taille(q)));
           aff_taille(p,0);
