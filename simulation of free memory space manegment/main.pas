@@ -13,9 +13,11 @@ var M:memory; adrA,adrB,adrC:integer;
 
 begin
   initMemory(m);
-  firstFit(m,1000);
-  libere(m,300,250);
+  firstFit(m,10000);
+  libere(m,300,800);
+  libere(m,3000,80000);
   AfficherMemory(m);
+
   {m:=nil;
   AddInTheBegin(m,3000,800);
   AddInTheBegin(m,700,1800);

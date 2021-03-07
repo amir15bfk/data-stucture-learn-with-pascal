@@ -13,6 +13,7 @@ const
 procedure initMemory(var M:liste);
 function firstFit(var M : liste;T:integer):integer;
 procedure libere(var m:liste;A,T:integer);
+procedure chack(var m:liste);
 implementation
 procedure initMemory(var M:liste);
   begin
@@ -50,10 +51,31 @@ begin
        m:=q;
        end;
 
-
-
+  //need to add check
+   chack(m);
 
 end;
+procedure chack(var m:liste);
+var p,q:liste; doSameThink:boolean;
+  begin
+      q:=m;
+      p:=adr(m);
+      doSameThink:=false;
+      while p<>nil do
+        begin
+        if ((fadr(q)+taille(q))>fadr(p)) then
+        begin
+          aff_taille(q,taille(q)+ fadr(p)+taille(p)-fadr(q)-taille(q));
+          aff_taille(p,0);
+          doSameThink:=true;
+        end;
+        q:=p;
+        p:=adr(p);
+        end;
+      Supprimer(m,0);
+      if doSamethink then
+      chack(m);
+  end;
 
 function firstFit(var M : liste;T:integer):integer;
   var p:liste; s:integer;
