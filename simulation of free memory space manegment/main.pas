@@ -51,6 +51,7 @@ begin
   AfficherMemory(m);
   writeln(' adrA = ' ,adrA,'  adrB = ' ,adrB,'  adrC = ' ,adrC);  }
 
+   readln;
 
 
 

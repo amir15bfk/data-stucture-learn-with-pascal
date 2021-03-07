@@ -2,14 +2,14 @@
 <CONFIG>
   <ProjectSession>
     <PathDelim Value="\"/>
-    <Version Value="10"/>
+    <Version Value="11"/>
     <BuildModes Active="Default"/>
     <Units Count="7">
       <Unit0>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="10"/>
-        <CursorPos X="16" Y="26"/>
+        <TopLine Value="28"/>
+        <CursorPos X="66" Y="35"/>
         <UsageCount Value="24"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -19,8 +19,8 @@
         <UnitName Value="AlcFree"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="197"/>
-        <CursorPos X="6" Y="209"/>
+        <TopLine Value="195"/>
+        <CursorPos X="18" Y="221"/>
         <UsageCount Value="24"/>
         <Loaded Value="True"/>
       </Unit1>
@@ -60,7 +60,7 @@
         <Loaded Value="True"/>
       </Unit6>
     </Units>
-    <JumpHistory Count="23" HistoryIndex="22">
+    <JumpHistory Count="25" HistoryIndex="24">
       <Position1>
         <Filename Value="main.pas"/>
         <Caret Line="9" Column="17"/>
@@ -153,6 +153,18 @@
         <Filename Value="main.pas"/>
         <Caret Line="26" Column="16" TopLine="10"/>
       </Position23>
+      <Position24>
+        <Filename Value="alcfree.pas"/>
+        <Caret Line="214" Column="20" TopLine="196"/>
+      </Position24>
+      <Position25>
+        <Filename Value="alcfree.pas"/>
+        <Caret Line="212" Column="24" TopLine="196"/>
+      </Position25>
     </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode="default"/>
+    </RunParams>
   </ProjectSession>
 </CONFIG>

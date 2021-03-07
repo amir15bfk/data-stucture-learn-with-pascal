@@ -203,17 +203,22 @@ begin
   worstFit:=s;
 end;
 function FreeSpace(var m:liste):integer;
-var p:liste; sum:integer;
+var p:liste; sum,i:integer;    s:String;
 begin
   p:=m;
   sum:=0;
   while p<>nil do
     begin
-    writeln(fadr(p),'     ',taille(p));
+    s:=fadr(p).Tostring();
+    write(fadr(p));
+    for i:=1 to 10 - length(s) do
+    write(' ');
+    writeln(taille(p));
     sum:=sum+taille(p);
+    p:=adr(p);
     end;
-  writeln('-----------------------');
-  writeln(' sum    ',sum);
+  writeln('------------------');
+  writeln('|sum|=     ',sum);
    freespace:=sum;
 end;
 
