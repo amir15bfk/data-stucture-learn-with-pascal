@@ -38,7 +38,7 @@ var
          trouve:boolean;
          retour : TRetour;
 begin
-     retour.prec  := NULL;
+     retour.prec  :=nil;
      retour.cour := l;
      trouve:= false;
      while (not trouve) and (retour.cour<>NULL) do

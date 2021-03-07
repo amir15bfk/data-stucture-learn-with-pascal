@@ -9,14 +9,32 @@ uses
   Classes   ,llculib,llculibplus, AlcFree
   { you can add units after this };
 
-var M:memory; adrA,adrB,adrC:integer;
+var M,lastFit:memory; adrA,adrB,adrC:integer;
 
 begin
   initMemory(m);
-  firstFit(m,1000);
-  libere(m,300,800);
+  initListe(lastFit);
+  firstFit(m,10000);
+  libere(m,300,200);
+  libere(m,3000,800);
+  libere(m,3900,300);
+  libere(m,5000,350);
+  libere(m,3000,4000);
   AfficherMemory(m);
-
+  nextFit(m,lastfit,150);
+  AfficherMemory(m);
+  nextFit(m,lastfit,150);
+  AfficherMemory(m);
+  nextFit(m,lastfit,20);
+  AfficherMemory(m);
+  libere(m,3000,4000);
+  AfficherMemory(m);
+  nextFit(m,lastfit,150);
+  AfficherMemory(m);
+  nextFit(m,lastfit,150);
+  AfficherMemory(m);
+  nextFit(m,lastfit,20);
+  AfficherMemory(m);
   {m:=nil;
   AddInTheBegin(m,3000,800);
   AddInTheBegin(m,700,1800);

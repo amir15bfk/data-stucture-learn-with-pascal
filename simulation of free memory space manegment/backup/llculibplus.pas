@@ -10,17 +10,17 @@ uses llculib;
 type
       memory = liste;
     TRetour = record
-      prec, cour : memory;
+      prec, cour : liste;
     end;
 
-procedure AfficherMemory(l:memory);
-function AddInTheBegin(var l:memory; x,y:TypeDeBase) : boolean;
-function Rechercher(l:memory;x:TypeDeBase):boolean;
-procedure Supprimer(var l:memory;x:TypeDeBase);
-function RechercheNonBooleenne(l:memory;x:TypeDeBase):TRetour;
+procedure AfficherMemory(l:liste);
+function AddInTheBegin(var l:liste; x,y:TypeDeBase) : boolean;
+function Rechercher(l:liste;x:TypeDeBase):boolean;
+procedure Supprimer(var l:liste;x:TypeDeBase);
+function RechercheNonBooleenne(l:liste;x:TypeDeBase):TRetour;
 
 implementation
-function Rechercher(l:memory;x:TypeDeBase):boolean;
+function Rechercher(l:liste;x:TypeDeBase):boolean;
 var
          trouve:boolean;
 begin
@@ -33,12 +33,12 @@ begin
      Rechercher := trouve;
 end;
 
-function RechercheNonBooleenne(l:memory;x:TypeDeBase):TRetour;
+function RechercheNonBooleenne(l:liste;x:TypeDeBase):TRetour;
 var
          trouve:boolean;
          retour : TRetour;
 begin
-     retour.prec  := NULL;
+     retour.prec  :=nill;
      retour.cour := l;
      trouve:= false;
      while (not trouve) and (retour.cour<>NULL) do
@@ -52,7 +52,7 @@ begin
      RechercheNonBooleenne := retour;
 end;
 
-procedure Supprimer(var l:memory;x:TypeDeBase);
+procedure Supprimer(var l:liste;x:TypeDeBase);
 var
          retour:TRetour;
 
@@ -70,7 +70,7 @@ begin
 
 end;
 
-procedure AfficherMemory(l:memory);
+procedure AfficherMemory(l:liste);
 begin
      while l<>NULL do
      begin
@@ -83,7 +83,7 @@ begin
      end;
 end;
 
-function AddInTheBegin(var l:memory; x,y:TypeDeBase):boolean;
+function AddInTheBegin(var l:liste; x,y:TypeDeBase):boolean;
 var
    p:memory;
    sortie : boolean;
