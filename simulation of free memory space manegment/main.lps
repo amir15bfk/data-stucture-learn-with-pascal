@@ -4,7 +4,7 @@
     <PathDelim Value="\"/>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="7">
+    <Units Count="8">
       <Unit0>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
@@ -17,7 +17,6 @@
         <Filename Value="alcfree.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="AlcFree"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="195"/>
         <CursorPos X="18" Y="221"/>
@@ -45,7 +44,7 @@
       </Unit4>
       <Unit5>
         <Filename Value="llculibplus.pas"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="3"/>
         <TopLine Value="73"/>
         <CursorPos X="16" Y="43"/>
         <UsageCount Value="12"/>
@@ -53,12 +52,22 @@
       </Unit5>
       <Unit6>
         <Filename Value="llculib.pas"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="4"/>
         <TopLine Value="30"/>
         <CursorPos X="12" Y="68"/>
         <UsageCount Value="12"/>
         <Loaded Value="True"/>
       </Unit6>
+      <Unit7>
+        <Filename Value="..\sort a stack using only an others two stacks\piles.pas"/>
+        <UnitName Value="Piles"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="31"/>
+        <CursorPos X="90" Y="36"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit7>
     </Units>
     <JumpHistory Count="25" HistoryIndex="24">
       <Position1>

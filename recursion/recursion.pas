@@ -113,10 +113,18 @@ begin
  mulRT := temp;
 end;
 
-function moyT( T:table;s:integer ;e:integer):real;
+function moyTabmyMethod( T:table;s:integer ;e:integer):real;
 
 begin
-  moyT:=sumRT(T,s,e)/(e-s+1);
+  moyTabmyMethod:=sumRT(T,s,e)/(e-s+1);
+
+end;
+function moyT( T:table;n:integer):real;
+
+begin
+    if n=1 then
+ moyT:=T[1]
+ else moyT:= ((n-1)*moyT( T,n-1)+T[n])/n;
 
 end;
 function valPascal(i,j:integer):integer;
@@ -167,25 +175,26 @@ begin
 
 end;
 
+
 var T:array [1..5] of  integer ;  s:String;
 begin
   //hanoi(3,'A','C','B');
   //writeln(pgcd(16,12));
   //writeln(sum(3));
-  //T[1]:=5;
-  //T[2]:=3;
-  //T[3]:=6;
-  //T[4]:=2;
-  //T[5]:=1;
+  T[1]:=5;
+  T[2]:=3;
+  T[3]:=6;
+  T[4]:=2;
+  T[5]:=1;
   //writeln(minR(T,1,5));
   //writeln(maxR(T,1,5));
   //writeln(sumRT(T,1,5));
   //writeln(mulRT(T,1,5));
-  //writeln(moyT(T,1,5):0:5);
+  writeln(moyT(T,5):0:5);
   //writeln(valPascal(4,2));
   //affMPascal(15);
-  s:='XIV';
-  writeln (RtoD(s));
+  //s:='XIV';
+  //writeln (RtoD(s));
   readln;
   readln;
 end.
