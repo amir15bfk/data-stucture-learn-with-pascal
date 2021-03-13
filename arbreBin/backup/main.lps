@@ -8,7 +8,6 @@
       <Unit0>
         <Filename Value="main.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <TopLine Value="6"/>
         <CursorPos X="22" Y="16"/>
         <UsageCount Value="21"/>
@@ -17,9 +16,10 @@
       <Unit1>
         <Filename Value="arbrebin.pas"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="38"/>
-        <CursorPos X="23" Y="56"/>
+        <TopLine Value="47"/>
+        <CursorPos X="3" Y="50"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
       </Unit1>
