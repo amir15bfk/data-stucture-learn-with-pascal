@@ -65,6 +65,7 @@ var  i,j,temp:integer;
       end;
 
   end;
+//marge sort
 procedure Fussion(var T:tableau;D,med,F:integer);
 var i,j,k:integer; temp:tableau;
   begin
@@ -112,7 +113,51 @@ var med:integer;
         Fussion(T,D,med,F);
       end;
   end;
+//quick sort
+procedure TriRapide(var T:tableau;D,F:integer);
+var G,Dr,piv,s,temp:integer;
+  begin
+      if D<F then
+      begin
+      G:=D;
+      piv:=F;
+      Dr:=f-1;
+      s:=1;
+      while g<=Dr do
+      if s=1 then
+           if T[G]>T[piv] then
+           begin
+           temp:= T[g];
+           T[g]:=T[piv];
+           T[piv]:=temp;
+           piv:=g;
+           g:=g+1;
+           s:=2;
+           end
+           else
+           G:=G+1
 
+      else
+          if T[Dr]<T[piv] then
+           begin
+           temp:= T[Dr];
+           T[dr]:=T[piv];
+           T[piv]:=temp;
+           piv:=dr;
+           dr:=dr-1;
+           s:=1;
+           end
+           else
+           dr:=Dr-1;
+
+      TriRapide(T,d,piv-1);
+      TriRapide(T,piv+1,F);
+
+
+
+      end;
+
+  end;
 
 procedure afficherT(var T:tableau;n:integer);
 var i:integer;
@@ -132,7 +177,7 @@ begin
   T[4]:=2;
   T[5]:=1;
   afficherT(T,5);
-  TriParFussion(T,1,5);
+  TriRapide(T,1,5);
   afficherT(T,5);
 end.
 
