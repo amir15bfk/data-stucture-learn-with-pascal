@@ -10,17 +10,25 @@ uses
   { you can add units after this };
 var arb:TarbreBin;
 begin
- initArbre(arb);
- allouer(arb);
- aff_val(arb,2);
- allouer(arb^.FG);
+  creeArebre(arb);
+
+  afficherParOrdre(arb);
+  //writeln('Min : ',min(arb));
+  writeln('Max : ',Max(arb));
+  writeln('find 5 : ',search( arb,5));
+  close(arb);
+  afficherParOrdre(arb);
+  {initarbre(arb);
+  allouer(arb);
+  aff_val(arb,2);
+  allouerG(arb);
   aff_val(fg(arb),1);
-  allouer(arb^.FD);
+  allouerD(arb);
   aff_val(fd(arb),3);
   afficherParOrdre(arb);
   libere( fg(arb));
   libere( fd(arb));
-  libere(arb);
+  libere(arb); }
   readln;
   readln;
 end.

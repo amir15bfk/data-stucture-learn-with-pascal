@@ -113,6 +113,7 @@ var med:integer;
         Fussion(T,D,med,F);
       end;
   end;
+//quick sort
 procedure TriRapide(var T:tableau;D,F:integer);
 var G,Dr,piv,s,temp:integer;
   begin

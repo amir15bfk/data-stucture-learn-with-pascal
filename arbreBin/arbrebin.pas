@@ -21,7 +21,9 @@ function val( ARB:TarbreBin):TypeDeBase;
 function FG( ARB:TarbreBin):Tarbrebin;
 function FD( ARB:TarbreBin):Tarbrebin;
 procedure allouer( var ARB:TarbreBin);
-procedure libere( ARB:TarbreBin);
+procedure allouerG(var  ARB:TarbreBin);
+procedure allouerD(var  ARB:TarbreBin);
+procedure libere(var ARB:TarbreBin);
 implementation
  procedure initArbre(var ARB:TarbreBin);
  begin
@@ -59,8 +61,19 @@ begin
   aff_FG(arb,nil);
   aff_Fd(arb,nil);
 end;
-
-procedure libere( ARB:TarbreBin);
+procedure allouerG(var  ARB:TarbreBin);
+begin
+  new(arb^.FG);
+  aff_FG(arb^.FG,nil);
+  aff_Fd(arb^.FG,nil);
+end;
+procedure allouerD(var  ARB:TarbreBin);
+begin
+  new(arb^.FD);
+  aff_FG(arb^.FD,nil);
+  aff_Fd(arb^.FD,nil);
+end;
+procedure libere(var ARB:TarbreBin);
 begin
   dispose(arb);
 end;
