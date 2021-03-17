@@ -13,12 +13,14 @@ function Min(arb:TarbreBin):typedebase;
 function Max(arb:TarbreBin):typedebase;
 Function search(arb:TarbreBin;x:Integer):Boolean;
 procedure close(var arb:TarbreBin);
+procedure supprime(var arb:TarbreBin;X:integer);
 implementation
 procedure afficherParOrdre( arb:TarbreBin);
 begin
   if arb<>nil then
   begin
    afficherParOrdre(FG(arb));
+
     writeln(' ',val(arb));
    afficherParOrdre(FD(arb));
   end;
@@ -55,7 +57,7 @@ begin
   if FG(arb)=nil then
    min:=val(arb)
    else min:= min(FG(arb))
-   else min:=nil;
+   else write('arbre Vide ');
 end;
 function Max(arb:TarbreBin):typedebase;
 begin
@@ -76,11 +78,48 @@ procedure close(var arb:TarbreBin);
 begin
   if arb <> nil then
        if (FD(arb)=nil) and (FG(arb)=nil)  then
-          dispose(arb)
+          begin
+          dispose(arb);
+          arb:=nil;
+          end
           else  begin
            close( arb^.FG);
            close( arb^.FD);
           end;
+end;
+procedure supprime(var arb:TarbreBin;X:integer);
+var  temp:integer;
+begin
+  if arb<>nil then
+     if val(arb)=x then
+     begin
+        if (FG(arb)=nil) and (FD(arb)=nil) then
+           begin
+           dispose(arb);
+           arb:=nil;
+
+           end
+        else begin
+         if FD(arb)<>nil then
+             begin
+              temp:=min(FD(arb));
+              aff_val(arb,temp);
+              supprime(arb^.FD,x);
+             end
+             else
+             begin
+              temp:=max(FG(arb));
+              aff_val(arb,temp);
+              supprime(arb^.FG,x);
+             end ;
+             end
+      end
+      else if (val(arb)<x )then
+         supprime(arb^.FD,x)
+         else
+           supprime(arb^.FG,x);
+
+
 end;
 
 end.

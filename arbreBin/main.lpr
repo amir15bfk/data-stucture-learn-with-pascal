@@ -16,8 +16,16 @@ begin
   writeln('Min : ',min(arb));
   writeln('Max : ',Max(arb));
   writeln('find 5 : ',search( arb,5));
-  close(arb);
+  supprime(arb,5);
+
+  writeln('find 5 : ',search( arb,5));
   afficherParOrdre(arb);
+  //close(arb);
+  if arb=nil then
+  begin
+  write('gg');
+  end;
+  //afficherParOrdre(arb);
   {initarbre(arb);
   allouer(arb);
   aff_val(arb,2);
