@@ -177,11 +177,16 @@ begin
 end;
 procedure printTree (arb:Tarbrebin);
  begin
+   if arb <>nil then
+      begin
    if FD(arb)<>nil then
       printTree(FD(arb), false, '');
       printVal(arb);
     if FG(arb)<>nil then
       printTree(FG(arb), true, '');
+
+      end
+   else printVal(arb);
 
  end;
 
@@ -193,9 +198,9 @@ begin
         else printTree (FD(arb), false, indent+'        ');
   write(indent);
   if isLeft then
-     write('\')
+     write(' \')
      else
-        write('/');
+        write(' /');
     write('----- ');
     printVal(arb);
 

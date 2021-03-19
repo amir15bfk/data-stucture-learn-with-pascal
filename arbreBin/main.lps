@@ -8,17 +8,18 @@
       <Unit0>
         <Filename Value="main.lpr"/>
         <IsPartOfProject Value="True"/>
-        <CursorPos X="21" Y="17"/>
-        <FoldState Value=" TL HO2DZ"/>
-        <UsageCount Value="44"/>
+        <CursorPos X="39" Y="24"/>
+        <FoldState Value=" TL HS2DB"/>
+        <UsageCount Value="45"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="arbrebin.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="2"/>
-        <CursorPos X="17" Y="71"/>
-        <UsageCount Value="44"/>
+        <TopLine Value="29"/>
+        <CursorPos X="22" Y="51"/>
+        <UsageCount Value="45"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
@@ -27,9 +28,9 @@
         <UnitName Value="arbreBinPlus"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="159"/>
-        <CursorPos X="21" Y="174"/>
-        <UsageCount Value="44"/>
+        <TopLine Value="161"/>
+        <CursorPos X="43" Y="168"/>
+        <UsageCount Value="45"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
@@ -68,24 +69,24 @@
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="arbrebin.pas"/>
-        <Caret Line="56" Column="23" TopLine="38"/>
+        <Filename Value="arbrebinplus.pas"/>
+        <Caret Line="33" Column="32"/>
       </Position1>
       <Position2>
         <Filename Value="main.lpr"/>
-        <Caret Line="16" Column="17" TopLine="4"/>
+        <Caret Line="16" Column="26"/>
       </Position2>
       <Position3>
-        <Filename Value="arbrebinplus.pas"/>
-        <Caret Line="33" Column="32"/>
+        <Filename Value="main.lpr"/>
+        <Caret Line="15" Column="19"/>
       </Position3>
       <Position4>
-        <Filename Value="main.lpr"/>
-        <Caret Line="16" Column="26"/>
+        <Filename Value="arbrebinplus.pas"/>
+        <Caret Line="78" Column="26" TopLine="30"/>
       </Position4>
       <Position5>
         <Filename Value="main.lpr"/>
-        <Caret Line="15" Column="19"/>
+        <Caret Line="19" Column="14"/>
       </Position5>
       <Position6>
         <Filename Value="arbrebinplus.pas"/>
@@ -93,99 +94,99 @@
       </Position6>
       <Position7>
         <Filename Value="main.lpr"/>
-        <Caret Line="19" Column="14"/>
+        <Caret Line="17" Column="3"/>
       </Position7>
       <Position8>
         <Filename Value="arbrebinplus.pas"/>
-        <Caret Line="78" Column="26" TopLine="30"/>
+        <Caret Line="58" Column="17" TopLine="34"/>
       </Position8>
       <Position9>
         <Filename Value="main.lpr"/>
-        <Caret Line="17" Column="3"/>
+        <Caret Line="20" Column="31"/>
       </Position9>
       <Position10>
         <Filename Value="arbrebinplus.pas"/>
-        <Caret Line="58" Column="17" TopLine="34"/>
+        <Caret Line="87" Column="17" TopLine="60"/>
       </Position10>
       <Position11>
-        <Filename Value="main.lpr"/>
-        <Caret Line="20" Column="31"/>
+        <Filename Value="arbrebinplus.pas"/>
+        <Caret Line="96" Column="33" TopLine="61"/>
       </Position11>
       <Position12>
         <Filename Value="arbrebinplus.pas"/>
-        <Caret Line="87" Column="17" TopLine="60"/>
+        <Caret Line="102" Column="33" TopLine="61"/>
       </Position12>
       <Position13>
         <Filename Value="arbrebinplus.pas"/>
-        <Caret Line="96" Column="33" TopLine="61"/>
+        <Caret Line="110" Column="28" TopLine="61"/>
       </Position13>
       <Position14>
-        <Filename Value="arbrebinplus.pas"/>
-        <Caret Line="102" Column="33" TopLine="61"/>
+        <Filename Value="main.lpr"/>
+        <Caret Line="20" Column="13"/>
       </Position14>
       <Position15>
-        <Filename Value="arbrebinplus.pas"/>
-        <Caret Line="110" Column="28" TopLine="61"/>
+        <Filename Value="main.lpr"/>
+        <Caret Line="21" Column="3"/>
       </Position15>
       <Position16>
         <Filename Value="main.lpr"/>
-        <Caret Line="20" Column="13"/>
+        <Caret Line="22" Column="15"/>
       </Position16>
       <Position17>
         <Filename Value="main.lpr"/>
-        <Caret Line="21" Column="3"/>
+        <Caret Line="19" Column="19"/>
       </Position17>
       <Position18>
-        <Filename Value="main.lpr"/>
-        <Caret Line="22" Column="15"/>
+        <Filename Value="arbrebinplus.pas"/>
+        <Caret Line="112" Column="9" TopLine="64"/>
       </Position18>
       <Position19>
         <Filename Value="main.lpr"/>
-        <Caret Line="19" Column="19"/>
+        <Caret Line="29" Column="50"/>
       </Position19>
       <Position20>
         <Filename Value="arbrebinplus.pas"/>
-        <Caret Line="112" Column="9" TopLine="64"/>
+        <Caret Line="93" Column="20" TopLine="64"/>
       </Position20>
       <Position21>
-        <Filename Value="main.lpr"/>
-        <Caret Line="29" Column="50"/>
+        <Filename Value="arbrebinplus.pas"/>
+        <Caret Line="110" Column="12" TopLine="63"/>
       </Position21>
       <Position22>
         <Filename Value="arbrebinplus.pas"/>
-        <Caret Line="93" Column="20" TopLine="64"/>
+        <Caret Line="86" Column="37" TopLine="63"/>
       </Position22>
       <Position23>
         <Filename Value="arbrebinplus.pas"/>
-        <Caret Line="110" Column="12" TopLine="63"/>
+        <Caret Line="102" Column="23" TopLine="89"/>
       </Position23>
       <Position24>
         <Filename Value="arbrebinplus.pas"/>
-        <Caret Line="86" Column="37" TopLine="63"/>
+        <Caret Line="82" Column="20" TopLine="71"/>
       </Position24>
       <Position25>
         <Filename Value="arbrebinplus.pas"/>
-        <Caret Line="102" Column="23" TopLine="89"/>
+        <Caret Line="84" Column="11" TopLine="74"/>
       </Position25>
       <Position26>
         <Filename Value="arbrebinplus.pas"/>
-        <Caret Line="82" Column="20" TopLine="71"/>
+        <Caret Line="23" Column="14" TopLine="16"/>
       </Position26>
       <Position27>
-        <Filename Value="arbrebinplus.pas"/>
-        <Caret Line="84" Column="11" TopLine="74"/>
+        <Filename Value="main.lpr"/>
+        <Caret Line="14" Column="15"/>
       </Position27>
       <Position28>
         <Filename Value="arbrebinplus.pas"/>
-        <Caret Line="23" Column="14" TopLine="16"/>
+        <Caret Line="161" Column="47" TopLine="159"/>
       </Position28>
       <Position29>
         <Filename Value="main.lpr"/>
-        <Caret Line="14" Column="15"/>
+        <Caret Line="52" Column="23"/>
       </Position29>
       <Position30>
-        <Filename Value="arbrebinplus.pas"/>
-        <Caret Line="161" Column="47" TopLine="159"/>
+        <Filename Value="main.lpr"/>
+        <Caret Line="24" Column="39"/>
       </Position30>
     </JumpHistory>
     <RunParams>

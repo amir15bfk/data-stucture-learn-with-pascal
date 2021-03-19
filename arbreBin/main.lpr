@@ -21,6 +21,10 @@ afficherParPostOrdre( arb);
 afficherEnLargeur( arb);
    writeln('---------------');
    printTree (arb);
+   supprime(arb,6);
+   writeln('---------------');
+   printTree (arb);
+   writeln('---------------');
 
   {afficherParOrdre(arb);
   writeln('Min : ',min(arb));

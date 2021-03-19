@@ -20,6 +20,7 @@ afficherParPostOrdre( arb);
    writeln('---EnLargeur---');
 afficherEnLargeur( arb);
    writeln('---------------');
+   printTree (arb);
 
   {afficherParOrdre(arb);
   writeln('Min : ',min(arb));

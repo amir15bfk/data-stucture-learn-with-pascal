@@ -172,16 +172,21 @@ begin
   if arb=nil then
      write('<nil>')
   else
-     write(val(arb));
+     write(' ',val(arb));
   writeln('');
 end;
 procedure printTree (arb:Tarbrebin);
  begin
+   if arb <>nil then
+      begin
    if FD(arb)<>nil then
       printTree(FD(arb), false, '');
       printVal(arb);
     if FG(arb)<>nil then
       printTree(FG(arb), true, '');
+
+      end
+   else printVal(arb);
 
  end;
 
@@ -208,4 +213,3 @@ begin
 end;
 
 end.
-
