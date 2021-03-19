@@ -5,8 +5,11 @@ unit arbreBinPlus;
 interface
 
 uses
-  Classes, arbreBin;
+  Classes, arbreBin,files;
+procedure afficherParPreOrdre( arb:TarbreBin);
 procedure afficherParOrdre( arb:TarbreBin);
+procedure afficherParPostOrdre( arb:TarbreBin);
+procedure afficherEnLargeur( arb:TarbreBin);
 procedure ajouteElement(var arb:TarbreBin;x:TypeDeBase);
 procedure creeArebre(var arb:TarbreBin);
 function Min(arb:TarbreBin):typedebase;
@@ -14,17 +17,56 @@ function Max(arb:TarbreBin):typedebase;
 Function search(arb:TarbreBin;x:Integer):Boolean;
 procedure close(var arb:TarbreBin);
 procedure supprime(var arb:TarbreBin;X:integer);
+
 implementation
+procedure afficherParPreOrdre( arb:TarbreBin);
+begin
+  if arb<>nil then
+  begin
+   writeln(' ',val(arb));
+   afficherParOrdre(FG(arb));
+   afficherParOrdre(FD(arb));
+  end;
+end;
 procedure afficherParOrdre( arb:TarbreBin);
 begin
   if arb<>nil then
   begin
    afficherParOrdre(FG(arb));
-
     writeln(' ',val(arb));
    afficherParOrdre(FD(arb));
   end;
 end;
+procedure afficherParPostOrdre( arb:TarbreBin);
+begin
+  if arb<>nil then
+  begin
+   afficherParOrdre(FG(arb));
+   afficherParOrdre(FD(arb));
+   writeln(' ',val(arb));
+
+  end;
+end;
+procedure afficherEnLargeur( arb:TarbreBin);
+var  f:Tfile; temp:Tarbrebin;
+  begin
+    initFile(f);
+    enfiler(f,arb);
+    while not fileVide(f) do
+          begin
+
+           desenfiler(f,temp);
+           if temp<>nil  then
+              begin
+           writeln (val(temp));
+           enfiler(f,Fg(temp));
+           enfiler(f,FD(temp));
+              end;
+          end;
+
+
+  end;
+
 procedure ajouteElement(var arb:TarbreBin;x:TypeDeBase);
 begin
   if arb = nil then

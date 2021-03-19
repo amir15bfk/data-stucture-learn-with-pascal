@@ -11,8 +11,17 @@ uses
 var arb:TarbreBin;
 begin
   creeArebre(arb);
+  writeln('---PreOrdre---');
+afficherParPreOrdre( arb);
+   writeln('---Ordre---');
+afficherParOrdre( arb);
+   writeln('---PostOrdre---');
+afficherParPostOrdre( arb);
+   writeln('---EnLargeur---');
+afficherEnLargeur( arb);
+   writeln('-------------');
 
-  afficherParOrdre(arb);
+  {afficherParOrdre(arb);
   writeln('Min : ',min(arb));
   writeln('Max : ',Max(arb));
   writeln('find 5 : ',search( arb,5));
@@ -24,7 +33,7 @@ begin
   if arb=nil then
   begin
   write('gg');
-  end;
+  end;      }
   //afficherParOrdre(arb);
   {initarbre(arb);
   allouer(arb);

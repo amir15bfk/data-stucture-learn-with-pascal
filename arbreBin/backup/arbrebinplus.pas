@@ -5,7 +5,7 @@ unit arbreBinPlus;
 interface
 
 uses
-  Classes, arbreBin;
+  Classes, arbreBin,files;
 procedure afficherParOrdre( arb:TarbreBin);
 procedure ajouteElement(var arb:TarbreBin;x:TypeDeBase);
 procedure creeArebre(var arb:TarbreBin);
@@ -14,6 +14,7 @@ function Max(arb:TarbreBin):typedebase;
 Function search(arb:TarbreBin;x:Integer):Boolean;
 procedure close(var arb:TarbreBin);
 procedure supprime(var arb:TarbreBin;X:integer);
+procedure afficherEnLargeur( arb:TarbreBin);
 implementation
 procedure afficherParOrdre( arb:TarbreBin);
 begin
@@ -25,6 +26,26 @@ begin
    afficherParOrdre(FD(arb));
   end;
 end;
+procedure afficherEnLargeur( arb:TarbreBin);
+var  f:Tfile; temp:Tarbrebin;
+  begin
+    initFile(f);
+    enfiler(f,arb);
+    while not fileVide(f) do
+          begin
+
+           desenfiler(f,temp);
+           if temp<>nil  then
+              begin
+           writeln (val(temp));
+           enfiler(f,Fg(temp));
+           enfiler(f,FD(temp));
+              end;
+          end;
+
+
+  end;
+
 procedure ajouteElement(var arb:TarbreBin;x:TypeDeBase);
 begin
   if arb = nil then
@@ -104,13 +125,13 @@ begin
              begin
               temp:=min(FD(arb));
               aff_val(arb,temp);
-              supprime(arb^.FD,x);
+              supprime(arb^.FD,temp);
              end
              else
              begin
               temp:=max(FG(arb));
               aff_val(arb,temp);
-              supprime(arb^.FG,x);
+              supprime(arb^.FG,temp);
              end ;
              end
       end
