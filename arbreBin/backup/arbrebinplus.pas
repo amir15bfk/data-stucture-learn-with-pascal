@@ -18,14 +18,18 @@ Function search(arb:TarbreBin;x:Integer):Boolean;
 procedure close(var arb:TarbreBin);
 procedure supprime(var arb:TarbreBin;X:integer);
 
+procedure printVal(arb:Tarbrebin);
+procedure printTree (arb:Tarbrebin);
+procedure printTree (arb:Tarbrebin;isLeft:boolean;indent:String);
+
 implementation
 procedure afficherParPreOrdre( arb:TarbreBin);
 begin
   if arb<>nil then
   begin
    writeln(' ',val(arb));
-   afficherParOrdre(FG(arb));
-   afficherParOrdre(FD(arb));
+   afficherParPreOrdre(FG(arb));
+   afficherParPreOrdre(FD(arb));
   end;
 end;
 procedure afficherParOrdre( arb:TarbreBin);
@@ -41,8 +45,8 @@ procedure afficherParPostOrdre( arb:TarbreBin);
 begin
   if arb<>nil then
   begin
-   afficherParOrdre(FG(arb));
-   afficherParOrdre(FD(arb));
+   afficherParPostOrdre(FG(arb));
+   afficherParPostOrdre(FD(arb));
    writeln(' ',val(arb));
 
   end;
@@ -160,6 +164,45 @@ begin
          supprime(arb^.FD,x)
          else
            supprime(arb^.FG,x);
+
+
+end;
+procedure printVal(arb:Tarbrebin);
+begin
+  if arb=nil then
+     write('<nil>')
+  else
+     write(val(arb));
+  writeln('');
+end;
+procedure printTree (arb:Tarbrebin);
+ begin
+   if FD(arb)<>nil then
+      printTree(FD(arb), false, '');
+      printVal(arb);
+    if FG(arb)<>nil then
+      printTree(FG(arb), true, '');
+
+ end;
+
+procedure printTree (arb:Tarbrebin;isLeft:boolean;indent:String);
+begin
+  if FD(arb)<>nil then
+     if  isLeft then
+        printTree (FD(arb), false, indent+' |      ')
+        else printTree (FD(arb), false, indent+'        ');
+  write(indent);
+  if isLeft then
+     write('\')
+     else
+        write('/');
+    write('----- ');
+    printVal(arb);
+
+    if FG(arb)<>nil then
+     if  isLeft then
+        printTree (FG(arb), true, indent+'        ')
+        else printTree (FG(arb), true, indent+' |      ');
 
 
 end;
