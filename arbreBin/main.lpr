@@ -11,15 +11,15 @@ uses
 var arb:TarbreBin;
 begin
   creeArebre(arb);
-  writeln('---PreOrdre---');
+   writeln('---PreOrdre----');
 afficherParPreOrdre( arb);
-   writeln('---Ordre---');
+   writeln('---Ordre-------');
 afficherParOrdre( arb);
    writeln('---PostOrdre---');
 afficherParPostOrdre( arb);
    writeln('---EnLargeur---');
 afficherEnLargeur( arb);
-   writeln('-------------');
+   writeln('---------------');
 
   {afficherParOrdre(arb);
   writeln('Min : ',min(arb));

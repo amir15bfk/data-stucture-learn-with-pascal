@@ -24,8 +24,8 @@ begin
   if arb<>nil then
   begin
    writeln(' ',val(arb));
-   afficherParOrdre(FG(arb));
-   afficherParOrdre(FD(arb));
+   afficherParPreOrdre(FG(arb));
+   afficherParPreOrdre(FD(arb));
   end;
 end;
 procedure afficherParOrdre( arb:TarbreBin);
@@ -41,8 +41,8 @@ procedure afficherParPostOrdre( arb:TarbreBin);
 begin
   if arb<>nil then
   begin
-   afficherParOrdre(FG(arb));
-   afficherParOrdre(FD(arb));
+   afficherParPostOrdre(FG(arb));
+   afficherParPostOrdre(FD(arb));
    writeln(' ',val(arb));
 
   end;

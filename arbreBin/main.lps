@@ -8,10 +8,9 @@
       <Unit0>
         <Filename Value="main.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="4"/>
-        <CursorPos X="19" Y="22"/>
-        <UsageCount Value="41"/>
+        <CursorPos Y="23"/>
+        <FoldState Value=" TL HN2Dj"/>
+        <UsageCount Value="42"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -19,17 +18,18 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="2"/>
         <CursorPos X="17" Y="71"/>
-        <UsageCount Value="41"/>
+        <UsageCount Value="42"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="arbrebinplus.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="arbreBinPlus"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="25"/>
-        <CursorPos X="37" Y="22"/>
-        <UsageCount Value="41"/>
+        <TopLine Value="58"/>
+        <CursorPos X="19" Y="45"/>
+        <UsageCount Value="42"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>

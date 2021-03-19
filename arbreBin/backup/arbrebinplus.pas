@@ -6,7 +6,10 @@ interface
 
 uses
   Classes, arbreBin,files;
+procedure afficherParPreOrdre( arb:TarbreBin);
 procedure afficherParOrdre( arb:TarbreBin);
+procedure afficherParPostOrdre( arb:TarbreBin);
+procedure afficherEnLargeur( arb:TarbreBin);
 procedure ajouteElement(var arb:TarbreBin;x:TypeDeBase);
 procedure creeArebre(var arb:TarbreBin);
 function Min(arb:TarbreBin):typedebase;
@@ -14,16 +17,34 @@ function Max(arb:TarbreBin):typedebase;
 Function search(arb:TarbreBin;x:Integer):Boolean;
 procedure close(var arb:TarbreBin);
 procedure supprime(var arb:TarbreBin;X:integer);
-procedure afficherEnLargeur( arb:TarbreBin);
+
 implementation
+procedure afficherParPreOrdre( arb:TarbreBin);
+begin
+  if arb<>nil then
+  begin
+   writeln(' ',val(arb));
+   afficherParOrdre(FG(arb));
+   afficherParOrdre(FD(arb));
+  end;
+end;
 procedure afficherParOrdre( arb:TarbreBin);
 begin
   if arb<>nil then
   begin
    afficherParOrdre(FG(arb));
-
     writeln(' ',val(arb));
    afficherParOrdre(FD(arb));
+  end;
+end;
+procedure afficherParPostOrdre( arb:TarbreBin);
+begin
+  if arb<>nil then
+  begin
+   afficherParOrdre(FG(arb));
+   afficherParOrdre(FD(arb));
+   writeln(' ',val(arb));
+
   end;
 end;
 procedure afficherEnLargeur( arb:TarbreBin);
