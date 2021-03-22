@@ -25,7 +25,7 @@ begin
    writeln('---------------');
    printTree (arb);
    writeln('---------------');
-   writeln(nombreFilsIM(arb));
+   writeln(nombreFilsPair(arb));
 
   {afficherParOrdre(arb);
   writeln('Min : ',min(arb));

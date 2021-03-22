@@ -8,8 +8,8 @@
       <Unit0>
         <Filename Value="main.lpr"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="2"/>
-        <CursorPos X="12" Y="28"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="18" Y="14"/>
         <UsageCount Value="46"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -26,10 +26,9 @@
         <Filename Value="arbrebinplus.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="arbreBinPlus"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="5"/>
-        <CursorPos X="52" Y="21"/>
+        <TopLine Value="154"/>
+        <CursorPos X="10" Y="195"/>
         <UsageCount Value="46"/>
         <Loaded Value="True"/>
       </Unit2>
@@ -63,7 +62,7 @@
         <Filename Value="files.pas"/>
         <EditorIndex Value="3"/>
         <CursorPos X="23" Y="28"/>
-        <UsageCount Value="13"/>
+        <UsageCount Value="14"/>
         <Loaded Value="True"/>
       </Unit7>
     </Units>
