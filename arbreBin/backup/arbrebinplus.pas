@@ -17,12 +17,14 @@ function Max(arb:TarbreBin):typedebase;
 Function search(arb:TarbreBin;x:Integer):Boolean;
 procedure close(var arb:TarbreBin);
 procedure supprime(var arb:TarbreBin;X:integer);
+function nombreFilsIM(arb : Tarbrebin):integer;
 
 procedure printVal(arb:Tarbrebin);
 procedure printTree (arb:Tarbrebin);
 procedure printTree (arb:Tarbrebin;isLeft:boolean;indent:String);
 
 implementation
+
 procedure afficherParPreOrdre( arb:TarbreBin);
 begin
   if arb<>nil then
@@ -167,12 +169,49 @@ begin
 
 
 end;
+function nombreFilsIM(arb : Tarbrebin):integer;
+begin
+  if arb = nil then
+      nombreFilsIM:=0
+  else
+
+    if  (FG(arb)<> nil ) or (FD(arb)<> nil ) then
+      begin
+       if FG(arb) = nil then
+       nombreFilsIM:=1+nombreFilsIM(FD(arb))
+       else  if FD(arb) = nil then
+             nombreFilsIM:=1+nombreFilsIM(FG(arb));
+      end
+      else  nombreFilsIM:=0;
+
+end;
+function nombreFilsPair(arb : Tarbrebin):integer;
+begin
+  if arb = nil then
+      nombreFilsPair:=0
+  else
+
+    if  (FG(arb)<> nil ) and (FD(arb)<> nil ) then
+      begin
+
+       nombreFilsPair:=1+nombreFilsPair(FD(arb)) +nombreFilsPair(FG(arb));
+      end
+      else begin
+       if  (FG(arb)<> nil ) then
+            nombreFilsPair:=nombreFilsPair(FG(arb))
+            else if (FD(arb)<> nil ) then
+            nombreFilsPair:=nombreFilsPair(FD(arb))
+            else nombreFilsPair:=0;
+      end;
+
+end;
+
 procedure printVal(arb:Tarbrebin);
 begin
   if arb=nil then
      write('<nil>')
   else
-     write(val(arb));
+     write(' ',val(arb));
   writeln('');
 end;
 procedure printTree (arb:Tarbrebin);
@@ -213,4 +252,3 @@ begin
 end;
 
 end.
-

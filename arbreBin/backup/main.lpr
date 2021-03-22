@@ -10,17 +10,22 @@ uses
   { you can add units after this };
 var arb:TarbreBin;
 begin
-  creeArebre(arb);
+   creeArebre(arb);
    writeln('---PreOrdre----');
-afficherParPreOrdre( arb);
+   afficherParPreOrdre( arb);
    writeln('---Ordre-------');
-afficherParOrdre( arb);
+   afficherParOrdre( arb);
    writeln('---PostOrdre---');
-afficherParPostOrdre( arb);
+   afficherParPostOrdre( arb);
    writeln('---EnLargeur---');
-afficherEnLargeur( arb);
+   afficherEnLargeur( arb);
    writeln('---------------');
    printTree (arb);
+   supprime(arb,6);
+   writeln('---------------');
+   printTree (arb);
+   writeln('---------------');
+   writeln(nombreFilsIM(arb));
 
   {afficherParOrdre(arb);
   writeln('Min : ',min(arb));
