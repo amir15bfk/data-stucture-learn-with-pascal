@@ -67,14 +67,14 @@ var  i,j,temp:integer;
   end;
 //marge sort
 procedure Fussion(var T:tableau;D,med,F:integer);
-var i,j,k:integer; temp:tableau;
+var i,j,k,h,g:integer; temp:tableau;
   begin
       i:=D;
       k:=1;
       j:=med+1;
-      while (i<=med) and (j<=F) do
+     while (i<=med) and (j<=F) do
             begin
-            if (T[i]<T[j]) then
+            if (T[i]<=T[j]) then
             begin
               temp[k]:=T[i];
               i:=i+1;
@@ -98,16 +98,16 @@ var i,j,k:integer; temp:tableau;
               k:=k+1;
               j:=j+1;
             end;
-      for i:=1 to F do
+      for i:=1 to k-1 do
           T[D+i-1]:=temp[i];
+    end;
 
-  end;
 procedure TriParFussion(var T:tableau;D,F:integer);
 var med:integer;
   begin
       if D<F then
       begin
-        med:=(D+F)div 2;
+        med:=(F+D)div 2;
         TriParFussion(T, D,med);
         TriParFussion(T, med+1,F);
         Fussion(T,D,med,F);
@@ -171,13 +171,18 @@ end;
 
 var T:tableau;
 begin
-  T[1]:=5;
-  T[2]:=4;
-  T[3]:=3;
-  T[4]:=2;
-  T[5]:=1;
-  afficherT(T,5);
-  TriRapide(T,1,5);
-  afficherT(T,5);
+  T[1]:=10;
+  T[2]:=9;
+  T[3]:=8;
+  T[4]:=7;
+  T[5]:=6;
+  T[6]:=5;
+  T[7]:=4;
+  T[8]:=3;
+  T[9]:=2;
+  T[10]:=1;
+  afficherT(T,10);
+  TriRapide(T,1,10);
+  afficherT(T,10);
 end.
 

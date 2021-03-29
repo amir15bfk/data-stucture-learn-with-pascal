@@ -8,10 +8,8 @@
       <Unit0>
         <Filename Value="main.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="2"/>
-        <CursorPos X="25" Y="26"/>
-        <UsageCount Value="46"/>
+        <CursorPos X="19" Y="10"/>
+        <UsageCount Value="59"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -20,49 +18,51 @@
         <EditorIndex Value="2"/>
         <TopLine Value="5"/>
         <CursorPos X="22" Y="51"/>
-        <UsageCount Value="46"/>
+        <UsageCount Value="59"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="arbrebinplus.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="arbreBinPlus"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <CursorPos X="26" Y="21"/>
-        <UsageCount Value="46"/>
+        <TopLine Value="148"/>
+        <CursorPos X="10" Y="195"/>
+        <UsageCount Value="59"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
         <Filename Value="..\llcu\llcu.lpr"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="2"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit3>
       <Unit4>
         <Filename Value="..\llcu\llculib.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="39"/>
         <CursorPos X="13" Y="39"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit4>
       <Unit5>
         <Filename Value="..\files\unit1.pas"/>
         <UnitName Value="Unit1"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="2"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit5>
       <Unit6>
         <Filename Value="..\piles et file Function\files.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="18" Y="6"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit6>
       <Unit7>
         <Filename Value="files.pas"/>
         <EditorIndex Value="3"/>
         <CursorPos X="23" Y="28"/>
-        <UsageCount Value="14"/>
+        <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit7>
     </Units>
