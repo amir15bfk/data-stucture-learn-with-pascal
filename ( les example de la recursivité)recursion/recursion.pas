@@ -166,7 +166,7 @@ function RtoD(R:String):integer;
 begin
  if (length(R)=0) then
  RtoD:=0
- else if (length(R)=0) then
+ else if (length(R)=1) then
  RtoD:= eval(R[1])
  else if (eval(R[1])<eval(R[2])) then
  RtoD:= eval(R[2])- eval(R[1])+RtoD(copy(R,3,length(R)-2))
