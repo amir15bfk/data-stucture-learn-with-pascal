@@ -17,8 +17,13 @@ function Max(arb:TarbreBin):typedebase;
 Function search(arb:TarbreBin;x:Integer):Boolean;
 procedure close(var arb:TarbreBin);
 procedure supprime(var arb:TarbreBin;X:integer);
+
 function nombreFilsImpair(arb : Tarbrebin):integer;
 function nombreFilsPair(arb : Tarbrebin):integer;
+procedure AfficherArbre2(arb:TarbreBin);
+procedure AfficherArbre3(arb:TarbreBin);
+
+function EstQuasiParfait(arb:TarbreBin):boolean;
 
 procedure printVal(arb:Tarbrebin);
 procedure printTree (arb:Tarbrebin);
@@ -83,7 +88,7 @@ begin
   end else
       if x < val( arb) then
           ajouteElement( arb^.FG,x)
-          else if x > val( arb) then
+          else
           ajouteElement( arb^.FD,x);
 end;
 procedure creeArebre(var arb:TarbreBin);
@@ -184,16 +189,63 @@ begin
   nombreFilsImpair:=s;
 end;
 function nombreFilsPair(arb : Tarbrebin):integer;
+var s:integer;
 begin
-  if arb = nil then
-      nombreFilsPair:=0
-  else
+  s:=0;
+  if arb <> nil then
+     begin
+       s:=nombreFilsPair(FD(arb)) +nombreFilsPair(FG(arb));
+        if  (FG(arb)<> nil ) and (FD(arb)<> nil ) then
+       s:=s+1;
+     end;
+   nombreFilsPair:=s;
+end;
+procedure AfficherArbre2(arb:TarbreBin);
+begin
+  if arb<>nil then
+     begin
+     write('{');
+     AfficherArbre2(FG(arb));
+     write(', ',val(arb),' ,');
 
-    if  (FG(arb)<> nil ) and (FD(arb)<> nil ) then
-       nombreFilsPair:=1+nombreFilsPair(FD(arb)) +nombreFilsPair(FG(arb))
-      else
-        nombreFilsPair:=nombreFilsPair(FD(arb)) +nombreFilsPair(FG(arb));
+     AfficherArbre2(FD(arb));
 
+     write('}');
+     end else write('...');
+end;
+procedure AfficherArbre3(arb:TarbreBin);
+begin
+  if arb<>nil then
+     if (FG(arb)<> nil) or  (FD(arb)<> nil)  then
+     begin
+     write('{');
+     AfficherArbre3(FG(arb));
+     write(',',val(arb),',');
+
+     AfficherArbre3(FD(arb));
+
+     write('}');
+     end else  write(val(arb))
+     else write('...');
+end;
+function EstQuasiParfait(arb:TarbreBin):boolean;
+begin
+  if arb<>nil then
+  begin
+  if (FG(arb)=nil ) and (FD(aeb)<>nil)  then
+  begin
+  if ((FG(FD(arb))=nil ) and (FD(FD(arb))=nil )) then
+  EstQuasiParfait:= true
+  else EstQuasiParfait:=false;
+  end
+  else if (FG(arb)<>nil ) and (FD(arb)=nil)  then
+  begin
+  if ((FG(FG(arb))=nil ) and (FD(FG(arb))=nil )) then
+  EstQuasiParfait:= true
+  else EstQuasiParfait:=false;
+  end else  EstQuasiParfait:= EstQuasiParfait(FG(arb)) and EstQuasiParfait(FD(arb));
+
+  end else EstQuasiParfait:=true;
 end;
 
 procedure printVal(arb:Tarbrebin);

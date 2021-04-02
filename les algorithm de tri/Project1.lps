@@ -4,17 +4,24 @@
     <PathDelim Value="\"/>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="1">
+    <Units Count="2">
       <Unit0>
         <Filename Value="Project1.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="main"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="136"/>
-        <CursorPos X="12" Y="185"/>
-        <UsageCount Value="22"/>
+        <TopLine Value="97"/>
+        <CursorPos X="19" Y="179"/>
+        <UsageCount Value="26"/>
         <Loaded Value="True"/>
       </Unit0>
+      <Unit1>
+        <Filename Value="..\..\File tableau circulaire\files.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="10"/>
+        <CursorPos X="32" Y="37"/>
+        <UsageCount Value="10"/>
+      </Unit1>
     </Units>
     <JumpHistory Count="10" HistoryIndex="9">
       <Position1>

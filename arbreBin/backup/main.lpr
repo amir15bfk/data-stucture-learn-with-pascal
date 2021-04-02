@@ -21,12 +21,12 @@ begin
    afficherEnLargeur( arb);
    writeln('---------------');
    printTree (arb);
-   supprime(arb,6);
-   writeln('---------------');
-   printTree (arb);
    writeln('---------------');
    writeln(nombreFilsPair(arb));
-
+   writeln(nombreFilsImpair(arb));
+   writeln('---------------');
+   AfficherArbre2(arb);
+   writeln;
   {afficherParOrdre(arb);
   writeln('Min : ',min(arb));
   writeln('Max : ',Max(arb));

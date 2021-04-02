@@ -24,6 +24,11 @@ begin
    writeln('---------------');
    writeln(nombreFilsPair(arb));
    writeln(nombreFilsImpair(arb));
+   writeln('---------------');
+   AfficherArbre2(arb);
+   writeln;
+   writeln('---------------');
+   writeln(EstQuasiParfait(arb));
   {afficherParOrdre(arb);
   writeln('Min : ',min(arb));
   writeln('Max : ',Max(arb));

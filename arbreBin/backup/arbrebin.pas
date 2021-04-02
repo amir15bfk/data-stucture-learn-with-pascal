@@ -73,7 +73,7 @@ begin
   aff_FG(arb^.FD,nil);
   aff_Fd(arb^.FD,nil);
 end;
-procedure libere( ARB:TarbreBin);
+procedure libere(var ARB:TarbreBin);
 begin
   dispose(arb);
 end;

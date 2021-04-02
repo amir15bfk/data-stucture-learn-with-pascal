@@ -182,7 +182,7 @@ begin
   T[9]:=2;
   T[10]:=1;
   afficherT(T,10);
-  TriRapide(T,1,10);
+  TriParFussion(T,1,10);
   afficherT(T,10);
 end.
 
